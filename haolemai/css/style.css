@@ -51,7 +51,7 @@ body a{
 } 
 .topNav .navMessage{
 	position: absolute;
-	right: 40px;
+	right: 36px;
 }
 .navMessage a{
 	padding: 0 12px 0 8px;
@@ -60,6 +60,9 @@ body a{
 	text-decoration: none;
 	font-size: 8px;
 	color: #5a5a5a;
+}
+.navMessage .navMessageOne{
+	padding-right:8px;
 }
 .navMessage a .iconfont{
 	font-size: 8px;
@@ -89,20 +92,23 @@ body a{
 	height: 110px;
 	background: #f5f5f5;
 	font-family: "宋体";
+	position: relative;
 	
 }
 .logo{
-	float: left;
-	margin-left:36px ;
+	position: absolute;
+	left:32px;
+	top:0;
 }
 .logoSearch{
+	position: absolute;
+	left:370px;
+	top:28px;
 	height: 60px;
-	float: left;
-	margin-left:126px ;
-	margin-top: 28px;
 }
 .logoSearch ._search{
 	text-indent: 8px;
+	line-height: 38px;
 	float: left;
 	width: 374px;
 	height: 38px;
@@ -119,16 +125,17 @@ body a{
 .logoSearch li{
 	float: left;
 	font-size:12px ;
-	padding:6px 9px 6px 0 ;
+	padding:8px 9px 6px 0 ;
 }
 .logoSearch li a{
 	color: #888;
 	
 }
 .shopcar{
-	float: right;
-	margin-right:50px ;
-	margin-top: 30px;
+	position: absolute;
+	right:50px;
+	top:30px;
+	height: 60px;
 	font-size: 12px;
 }
 .shopcar span{
@@ -162,7 +169,7 @@ body a{
 	margin: 0 auto;
 }
 .containNav ul{
-	margin-left:40px ;
+	margin-left:32px ;
 }
 .containNav li{
 	float:left;
@@ -176,19 +183,29 @@ body a{
 	background: #d70057;
 }
 .containNav .liTwo{
+	position: relative;
 	width:122px ;
 }
 .containNav .liThr{
-	margin-left:20px ;
+	margin-left:34px;
+	position: relative;
+}
+.containNav .lifor{
+	margin-left:-4px;
 }
 .containNav .liThr img{
 	float: left;
+	position: absolute;
+	left: -8px;
+	top:0;
 }
 .containNav .liTwo a{
+	position: absolute;
 	display: block;
 	width:122px ;
 	height: 46px;
-	margin-top:-6px ;
+	left: 0;
+	top:-6px ;
 	background: url(http://0.js.al.okbuycdn.com/resources/images/v6/common/common-thumb.png) -187px -46px no-repeat; 
 }
 .containNav li a{
@@ -224,4 +241,10 @@ body a{
 .swiper-container img{
 	width: 100%;
 	height: 100%;
+}
+
+.subBanner{
+	width: 1200px;
+	height: 87px;
+	margin: 0 auto;
 }
