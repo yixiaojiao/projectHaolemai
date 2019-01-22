@@ -4,10 +4,16 @@
 body{
 	height: 3000px;
 	overflow: auto;
-	background: #f2f2f2;
+	background: #f5f5f5;	
 }
 
+body a{
+	text-decoration: none;
+}
 
+.topwrapBackground{
+	background: #fff;
+}
 .topwrap{
 	margin: 0 auto;
 }
@@ -35,6 +41,7 @@ body{
 	width: 1264px;
 	height: 28px;
 	margin: 0 auto;
+	font-family: "宋体";
 }
 .topNav .topNav_container{
 	position: relative;
@@ -44,7 +51,7 @@ body{
 } 
 .topNav .navMessage{
 	position: absolute;
-	right: 30px;
+	right: 40px;
 }
 .navMessage a{
 	padding: 0 12px 0 8px;
@@ -55,8 +62,9 @@ body{
 	color: #5a5a5a;
 }
 .navMessage a .iconfont{
-	font-size: 10px;
-	padding: 0 0 0 6px;
+	font-size: 8px;
+	padding: 0 0 0 4px;
+	
 }
 .navMessage a:after{
 	content: "";
@@ -71,4 +79,136 @@ body{
 .navMessage .clearBorder:after{
 	content: "";
 	display: none;
+}
+
+
+.toplogo{
+	margin: 0 auto;
+	border-top:1px solid #dcdcdc ;
+	width:1264px;
+	height: 110px;
+	background: #f5f5f5;
+	font-family: "宋体";
+	
+}
+.logo{
+	float: left;
+	margin-left:36px ;
+}
+.logoSearch{
+	height: 60px;
+	float: left;
+	margin-left:126px ;
+	margin-top: 28px;
+}
+.logoSearch ._search{
+	text-indent: 8px;
+	float: left;
+	width: 374px;
+	height: 38px;
+	border:3px solid #d70057;
+}
+.logoSearch .btn{
+	float: left;
+	height: 38px;
+	width: 100px;
+	background:#da0055;
+	border:0;
+	color: #fff;
+}
+.logoSearch li{
+	float: left;
+	font-size:12px ;
+	padding:6px 9px 6px 0 ;
+}
+.logoSearch li a{
+	color: #888;
+	
+}
+.shopcar{
+	float: right;
+	margin-right:50px ;
+	margin-top: 30px;
+	font-size: 12px;
+}
+.shopcar span{
+	float: left;
+	text-align: center;
+	line-height: 32px;
+}
+.shopcar span:nth-child(1){
+	width: 70px;
+	height: 32px;
+	background: #ffda73;
+}
+.shopcar span:nth-child(2){
+	width: 175px;
+	height: 28px;
+	border:2px solid #ffda73;
+	background: #fff;
+	line-height: 28px;
+}
+
+
+
+.containNavBackground{
+	width: 100%;
+	background: #000;
+}
+.containNav{
+	width: 1264px;
+	height: 40px;
+	background: #000;
+	margin: 0 auto;
+}
+.containNav ul{
+	margin-left:40px ;
+}
+.containNav li{
+	float:left;
+	width:100px ;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+}
+.containNav .liOne{
+	background: #d70057;
+}
+.containNav .liTwo{
+	width:122px ;
+}
+.containNav .liThr{
+	margin-left:20px ;
+}
+.containNav .liThr img{
+	float: left;
+}
+.containNav .liTwo a{
+	display: block;
+	width:122px ;
+	height: 46px;
+	margin-top:-6px ;
+	background: url(http://0.js.al.okbuycdn.com/resources/images/v6/common/common-thumb.png) -187px -46px no-repeat; 
+}
+.containNav li a{
+	color: #fff;
+}
+
+
+/*.warp-banner{
+	width: 2526px;
+	height: 350px;
+	margin: 0 auto;
+	background: #f00;
+	text-align: center;
+}
+.swiper-container{
+	width: 1200px;
+	height: 350px;
+	margin: 0 auto;
+}*/
+.swiper-container img{
+	width: 100%;
+	height: 100%;
 }
