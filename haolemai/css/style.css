@@ -196,18 +196,31 @@ body a{
 }
 
 
-/*.warp-banner{
-	width: 2526px;
+.warp-banner{
+	width: 100%;
 	height: 350px;
-	margin: 0 auto;
+	background: #fff;
+	position: relative;
+}
+.swiper-container .rltn{
+	width:1200px;
+	height:350px;
 	background: #f00;
-	text-align: center;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -600px;
 }
 .swiper-container{
-	width: 1200px;
+	width: 1894.5px;
 	height: 350px;
 	margin: 0 auto;
-}*/
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+}
 .swiper-container img{
 	width: 100%;
 	height: 100%;
