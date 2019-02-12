@@ -34,6 +34,12 @@ body a{
 .topwrap .topImg2{
 	background:url("http://i.okaybuy.cn/static/fa7ec5f187da9b31a5a0b52d50133530.jpg") no-repeat;	
 }
+.topwrap .topImg3{
+	background:url("http://i.okaybuy.cn/static/40661d1f6b2a7a39a29341ef4d0b1377.jpg") no-repeat -368px;	
+}
+.topwrap .topImg4{
+	background:url("http://i.okaybuy.cn/static/ca2d28cfc318895872a56713de34392e.jpg") no-repeat;	
+}
 
 /**/
 
@@ -129,17 +135,27 @@ body a{
 	line-height: 38px;
 	float: left;
 	width: 374px;
-	height: 38px;
+	height: 30px;
 	border:3px solid #d70057;
 }
 .list{
-	display: none;
+	z-index: 99999;
 	position: absolute;
 	top:38px;
 	left:0;
-	width: 20px;
-	height: 40px;
-	background:saddlebrown;
+	width: 380px;
+	background:#fff;
+}
+.list p{
+	text-indent: 8px;
+	width: 380px;
+	height: 29px;
+	border-bottom:1px dashed royalblue ;
+	line-height: 29px;
+	cursor: pointer;
+}
+.list p:hover{
+	background:#ccc;
 }
 .logoSearch .btn{
 	float: left;
@@ -213,7 +229,9 @@ body a{
     line-height: 24px;
 	font-size: 12px;
 }
-
+.SportsLife a,.CasualClothing a,.Shoes a,.Earth a{
+	color:#333;
+}
 .containNav ul{
 	margin-left:32px ;
 }
@@ -233,9 +251,12 @@ body a{
 .containNav li a:hover{
 	color: #d70057;
 }
+.containNav .liOne a:hover{
+	color: #fff;
+}
 .colbox{
 	float: left;
-	padding:0 10px ;
+	padding:10px ;
 }
 .colbox h3{
 	margin-top:12px ;
@@ -539,6 +560,7 @@ body a{
 }
 .bottomNav{
 	float: right;
+	overflow: hidden;
 }
 .bottomNav li{
 	float: left;
@@ -554,13 +576,13 @@ body a{
     font-family: 'Microsoft Yahei';
     font-size: 14px;
     color: #999;
-    padding-left: 1em;
+    padding-left: 16px;
 }
 .bottomNav p a{
 	color: #666;
 	font-size: 12px;
 	line-height: 24px;
-	padding-left: 1em;
+	padding-left: 16px;
 }
 .bottomLogo{
 	clear: both;

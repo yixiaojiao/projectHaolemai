@@ -1,6 +1,5 @@
 $.ajax("json/content2.json")
             .then((res)=>{
-                     console.log(res);
                      obj = res;
                      commodityTwo();
             })

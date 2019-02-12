@@ -7,18 +7,21 @@
 	</head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/commoditystyle.css" />
 	<link rel="stylesheet" href="font/iconfont.css" />
 
 	<body>
 		<script src="http://libs.baidu.com/jquery/1.11.3/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.pagination.js" ></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-        <script type="text/javascript" src="../../../common(4).js" ></script>
+		<script type="text/javascript" src="../../../common(4).js"></script>
+        <script src="js/art-template.js"></script>
 		<!-- topwrap -->
 
 		<div class="topwrapBackground">
 			<div class="topwrap">
-				<a class="topImg1" href="#"></a>
-				<a class="topImg2" href="#"></a>
+				<a class="topImg3" href="#"></a>
+				<a class="topImg4" href="#"></a>
 			</div>
 		</div>
 
@@ -86,16 +89,17 @@
 		</div>
 
 		<!-- containNav  -->
-		<div class="containNavBackground">
+
+		<div class="containNavBackground commmodityclear">
 			<div class="containNav">
 				<ul>
-					<li class="liOne">
+					<li>
 						<a href="index.html">首页</a>
 					</li>
 					<li class="liTwo">
 						<a href="#"></a>
 					</li>
-					<li>
+					<li class="liOne">
 						<a id="erOne" href="commodity.html">运动生活</a>
 					</li>
 					<li>
@@ -118,15 +122,15 @@
 							<h3>运动鞋</h3>
 							<p class="context">
 								<a href="#">跑步鞋</a>
-								<a href="#">复古鞋</a>                    
-                                <a href="#">休闲鞋</a>
+								<a href="#">复古鞋</a>
+								<a href="#">休闲鞋</a>
 								<a href="#">帆布鞋</a>
 								<a href="#">板鞋</a>
 								<a href="#">运动生活系列</a>
 								<a href="#">滑板鞋</a>
 								<a href="#">篮球鞋</a>
 								<a href="#">凉鞋/凉拖</a>
-                                <a href="#">健步鞋</a>
+								<a href="#">健步鞋</a>
 								<a href="#">足球鞋</a>
 								<a href="#">羽毛球鞋</a>
 								<a href="#">网球鞋</a>
@@ -135,7 +139,7 @@
 						</div>
 						<div class="catewrap">
 							<h3>运动服</h3>
-							<p class="context">								
+							<p class="context">
 								<a href="#">夹克/外套</a>
 								<a href="#">卫衣</a>
 								<a href="#">棉服</a>
@@ -149,14 +153,14 @@
 								<a href="#">短裤</a>
 								<a href="#">裙装</a>
 								<a href="#">套装</a>
-							</p>	
+							</p>
 						</div>
-                           <div class="catewrap">
+						<div class="catewrap">
 							<h3>儿童专区</h3>
 							<p class="context">
 								<a href="#">运动鞋</a>
-								<a href="#">休闲鞋</a>                    
-                                <a href="#">跑步鞋</a>
+								<a href="#">休闲鞋</a>
+								<a href="#">跑步鞋</a>
 								<a href="#">篮球鞋</a>
 								<a href="#">童靴</a>
 								<a href="#">童装</a>
@@ -166,33 +170,33 @@
 							<h3>运动周边</h3>
 							<p class="context">
 								<a href="#">袜子</a>
-                                <a href="#">帽子</a> 
-                                <a href="#">护具</a>
+								<a href="#">帽子</a>
+								<a href="#">护具</a>
 								<a href="#">球类</a>
 								<a href="#">泳具</a>
-                                <a href="#">球拍</a>
+								<a href="#">球拍</a>
 								<a href="#">运动休闲包</a>
 							</p>
 						</div>
 					</div>
-					<div class="colbox">			
+					<div class="colbox">
 						<h3>运动导购</h3>
-                        <div class="catewrap">											
-							<h3>早春穿搭</h3>											
-							<div class="context">				
-								<a href="#">内搭卫衣</a>			
-								<a href="#">外套</a>			
+						<div class="catewrap">
+							<h3>早春穿搭</h3>
+							<div class="context">
+								<a href="#">内搭卫衣</a>
+								<a href="#">外套</a>
 								<a href="#">收腿运动裤</a>
-                                <a href="#">贝壳头</a>				
+								<a href="#">贝壳头</a>
 								<a href="#">小椰子</a>
-                                <a href="#">AIR MAX</a>			
-								<a href="#">最新鞋款</a>	
-							</div>						
-                        </div>					
-		
-						<div class="catewrap">		
-                            <h3>跑步运动</h3>								
-							<div class="context">	
+								<a href="#">AIR MAX</a>
+								<a href="#">最新鞋款</a>
+							</div>
+						</div>
+
+						<div class="catewrap">
+							<h3>跑步运动</h3>
+							<div class="context">
 								<a href="#">跑步鞋品</a>
 								<a href="#">BOOST</a>
 								<a href="#">ZOOM</a>
@@ -206,31 +210,31 @@
 								<a href="#">Lunar</a>
 								<a href="#">李宁弧</a>
 								<a href="#">李宁云</a>
-							</div>	
-						</div>		
-						<div class="catewrap">		
-                            <h3>球类运动</h3>								
-							<div class="context">	
-								<a href="#">内搭卫衣</a>			
-								<a href="#">内搭卫衣</a>			
-								<a href="#">外套</a>			
+							</div>
+						</div>
+						<div class="catewrap">
+							<h3>球类运动</h3>
+							<div class="context">
+								<a href="#">内搭卫衣</a>
+								<a href="#">内搭卫衣</a>
+								<a href="#">外套</a>
 								<a href="#">收腿运动裤</a>
-                                <a href="#">贝壳头</a>				
+								<a href="#">贝壳头</a>
 								<a href="#">小椰子</a>
-							</div>	
-						</div>		
-						<div class="catewrap">		
-							<h3>健身/瑜伽/游泳</h3>	
-							<div class="context">	
-								<a href="#">内搭卫衣</a>			
-								<a href="#">外套</a>			
+							</div>
+						</div>
+						<div class="catewrap">
+							<h3>健身/瑜伽/游泳</h3>
+							<div class="context">
+								<a href="#">内搭卫衣</a>
+								<a href="#">外套</a>
 								<a href="#">收腿运动裤</a>
-                                <a href="#">贝壳头</a>				
+								<a href="#">贝壳头</a>
 								<a href="#">小椰子</a>
-                                <a href="#">AIR MAX</a>			
-								<a href="#">最新鞋款</a>	
-							</div>	
-						</div>		
+								<a href="#">AIR MAX</a>
+								<a href="#">最新鞋款</a>
+							</div>
+						</div>
 					</div>
 					<div class="colbox">
 						<h3>品牌导购</h3>
@@ -252,15 +256,15 @@
 							<h3>男装</h3>
 							<p class="context">
 								<a href="#">男衬衫</a>
-								<a href="#">男T恤</a>                    
-                                <a href="#">男卫衣</a>
+								<a href="#">男T恤</a>
+								<a href="#">男卫衣</a>
 								<a href="#">南迦克</a>
 								<a href="#">板鞋</a>
 								<a href="#">运动生活系列</a>
 								<a href="#">滑板鞋</a>
 								<a href="#">篮球鞋</a>
 								<a href="#">凉鞋/凉拖</a>
-                                <a href="#">健步鞋</a>
+								<a href="#">健步鞋</a>
 								<a href="#">足球鞋</a>
 								<a href="#">羽毛球鞋</a>
 								<a href="#">网球鞋</a>
@@ -269,7 +273,7 @@
 						</div>
 						<div class="catewrap">
 							<h3>女装</h3>
-							<p class="context">								
+							<p class="context">
 								<a href="#">女衬衫</a>
 								<a href="#">女T恤</a>
 								<a href="#">棉服</a>
@@ -280,25 +284,25 @@
 								<a href="#">短裤</a>
 								<a href="#">裙装</a>
 								<a href="#">套装</a>
-							</p>	
+							</p>
 						</div>
-				   </div>
+					</div>
 				</div>
-				<div class="Shoes">					
+				<div class="Shoes">
 					<div class="colbox">
 						<h3>男鞋</h3>
-						<p class="context">								
-								<a href="#">休闲鞋</a>
-								<a href="#">球鞋</a>
-								<a href="#">正装鞋</a>
-								<a href="#">尚无鞋</a>
-								<a href="#">板鞋</a>
-								<a href="#">伐木写</a>
-								<a href="#">咚咚鞋</a>
-								<a href="#">短裤</a>
-								<a href="#">裙装</a>
-								<a href="#">套装</a>
-						</p>	
+						<p class="context">
+							<a href="#">休闲鞋</a>
+							<a href="#">球鞋</a>
+							<a href="#">正装鞋</a>
+							<a href="#">尚无鞋</a>
+							<a href="#">板鞋</a>
+							<a href="#">伐木写</a>
+							<a href="#">咚咚鞋</a>
+							<a href="#">短裤</a>
+							<a href="#">裙装</a>
+							<a href="#">套装</a>
+						</p>
 					</div>
 					<div class="colbox">
 						<h3>品牌导购</h3>
@@ -308,18 +312,18 @@
 					</div>
 					<div class="colbox">
 						<h3>女鞋</h3>
-						<p class="context">								
-								<a href="#">休闲鞋</a>
-								<a href="#">球鞋</a>
-								<a href="#">正装鞋</a>
-								<a href="#">尚无鞋</a>
-								<a href="#">板鞋</a>
-								<a href="#">伐木写</a>
-								<a href="#">咚咚鞋</a>
-								<a href="#">短裤</a>
-								<a href="#">裙装</a>
-								<a href="#">套装</a>
-						</p>	
+						<p class="context">
+							<a href="#">休闲鞋</a>
+							<a href="#">球鞋</a>
+							<a href="#">正装鞋</a>
+							<a href="#">尚无鞋</a>
+							<a href="#">板鞋</a>
+							<a href="#">伐木写</a>
+							<a href="#">咚咚鞋</a>
+							<a href="#">短裤</a>
+							<a href="#">裙装</a>
+							<a href="#">套装</a>
+						</p>
 					</div>
 				</div>
 				<div class="Earth">
@@ -345,62 +349,237 @@
 			</div>
 		</div>
 
-		<!-- banner -->
-		<div class="warp-banner">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/dcc92c79479f3b977962bdfd1547c4af.jpg"></div>
-					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/e26483cd8d30a2886560ab0c9c6be713.jpg"></div>
-					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/08e0d339ce076ea56fcc25c8b9245e35.jpg"></div>
-					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/3b46f3bca80d465b3af4a696ccd7d3ca.jpg"></div>
-					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/aa6c60bf3904172477c6a6017d537110.jpg"></div>
-					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/dc3f6a90fa356183222b874f842a74b7.jpg"></div>
+		<!--preparation -->
+		<div class="preparationBackground">
+			<div class="preparation">
+				<div class="sportsWear">
+					<h4 class="left">好乐买>><a href="#">运动服</a></h4><span class="right"><a href="#">全部取消</a></span>
 				</div>
-				<div class="rltn">
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+				<div class="_sex">
+					<h5 class="entire-h5 left">性别:</h5>
+					<div class="entire-con right">
+						<span class="entire-all left">
+                                <i>全部</i>
+                        </span>
+						<div class="entire-list">
+							<ul class="entire-ul left">
+								<li>
+									<a href="#"> 男</a>
+								</li>
+								<li>
+									<a href="#"> 女</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="swiper-scrollbar"></div>
-				<div class="swiper-pagination"></div>
+				<div class="_brand">
+					<h5 class="entire-h5 left">品牌:</h5>
+					<div class="entire-con right">
+						<span class="entire-all left">
+                                <i>全部</i>
+                        </span>
+						<div class="entire-list left">
+							<ul class="entire-ul">
+								<li>
+									<a href="#">李宁</a>
+								</li>
+								<li>
+									<a href="#">阿迪达斯</a>
+								</li>
+								<li>
+									<a href="#">李宁</a>
+								</li>
+								<li>
+									<a href="#">耐克</a>
+								</li>
+								<li>
+									<a href="#">李宁</a>
+								</li>
+								<li>
+									<a href="#">阿迪达斯</a>
+								</li>
+								<li>
+									<a href="#">李宁</a>
+								</li>
+								<li>
+									<a href="#">阿迪达斯</a>
+								</li>
+								<li>
+									<a href="#">李宁</a>
+								</li>
+								<li>
+									<a href="#">阿迪达斯</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="_yardage">
+					<h5 class="entire-h5 left">尺码:</h5>
+					<div class="entire-con right">
+						<span class="entire-all left">
+                                <i>全部</i>
+                        </span>
+						<div class="entire-list left">
+							<ul class="entire-ul">
+								<li>
+									<a href="#">120</a>
+								</li>
+								<li>
+									<a href="#">122</a>
+								</li>
+								<li>
+									<a href="#">126</a>
+								</li>
+								<li>
+									<a href="#">128</a>
+								</li>
+								<li>
+									<a href="#">130</a>
+								</li>
+								<li>
+									<a href="#">140</a>
+								</li>
+								<li>
+									<a href="#">150/56A</a>
+								</li>
+								<li>
+									<a href="#">150/60A</a>
+								</li>
+								<li>
+									<a href="#">160/56A</a>
+								</li>
+								<li>
+									<a href="#">170</a>
+								</li>
+								<li>
+									<a href="#">170/56A</a>
+								</li>
+								<li>
+									<a href="#">170/60A</a>
+								</li>
+								<li>
+									<a href="#">180</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="_colors">
+					<h5 class="entire-h5 left">颜色:</h5>
+					<div class="entire-con right">
+						<span class="entire-all left">
+                                <i>全部</i>
+                        </span>
+						<div class="entire-list">
+							<ul class="entire-ul left">
+								<li>
+									<a href="#"> 红</a>
+								</li>
+								<li>
+									<a href="#"> 黄</a>
+								</li>
+								<li>
+									<a href="#"> 蓝</a>
+								</li>
+								<li>
+									<a href="#"> 绿</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="_price">
+					<h5 class="entire-h5 left">价格:</h5>
+					<div class="entire-con entire-colon right">
+						<div class="entire-filter-price">
+							<span class="entirefpricetxt">￥</span>
+							<input class="entire-num" type="text">
+						</div>
+						<div class="left entire-divnum">-</div>
+						<div class="entire-filter-price">
+							<span class="entirefpricetxt">￥</span>
+							<input class="entire-num" type="text">
+						</div>
+						<button class="_obtn">确定</button>
+					</div>
+				</div>
 			</div>
 		</div>
-		<!-- subBanner -->
-		<div class="subBanner">
-			<img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/ad_5.png">
+		<div class="_catmore">
+			<a class="_mbtn">更多<span class="upicon"></span></a>
 		</div>
-		<!--famousBrand-->
 
-		<div class="famousBrand">
-			<div class="brandinin">
-				<!--json数据 -->
+		<!--moreWarelist-->
+
+		<div class="moreWarelist">
+			<div class="moreWarelist-nav left">
+				<a class="moreWarelist-nav-one" href="#">默认</a>
+				<a href="#">价格</a>
+				<a href="#">销量</a>
+				<a href="#">最新</a>
 			</div>
+			<div class="moreWarelist-page right">
+				<a href="javascript:;" class="prev"><</a><b class="_pagespan"><i id="koisa">1</i>/<i id="kosaa">2</i>页</b><a href="javascript:;" class="next">></a></div>
+			<div class="moreWarelist-new right">共找到<span id="sioio">0</span>个商品</div>
 		</div>
 
-		<!--content-->
-		<div class="whiteBackground">
-			<div class="centerImg">
-				<img src="http://i.okaybuy.cn/static/1fe7c1c9bf745d6a513f55ea345f38f8.jpg" />
-			</div>
-        <!--main1-->
-			<div class="main1">
-				<div class="main1w1220">
-				<!--json结构-->
+		<!--moreWarecontent-->
+
+		<div class="moreWarecontent">
+			<div class="_Warecontent-wrap">
+				<div class="_Warecontent-img">
+					<a href="#">
+						<img alt="时尚休闲牛仔短裤" src="http://0.image.al.okbuycdn.com/nbn/s270_270/static/109abb7a2b2734760320f2414333bc10.jpg">
+					</a>
 				</div>
+				<p class="_Warecontent-tit1">
+					<a href="#"> 李宁&nbsp;男式&nbsp;时尚休闲牛仔短裤</a>
+				</p>
+				<p class="_Warecontent-price">
+					￥<span class="_Wareprice">79</span>
+					<span class="_Warerebate">(<em>2.3</em>折)</span>
+					<span class="_Wareoldprice">339</span>
+				</p>
+				<p class="_Wareexplain">
+					<a href="#"><span class="_Wareexplain-tag">特价</span>李宁鞋服 三折封顶</a>
+				</p>
 			</div>
-	    <!-- -->
-			<div class="squareness">
-				<div class="squareness"><img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/fg_3.png"></div>
-				<a href="#"><img src="http://i.okaybuy.cn/static/e428389ca0e796cf4373dbdff36e3349.jpg" width="1200" height="150"></a>
-				<div class="squareness"><img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/fg_3.png"></div>
-			</div>
-		<!--main2-->
-			<div class="main2">
-				<div class="main2w1220">
-				<!--json结构-->
-				</div>
-			</div>
+			<div class="_Warecontent-wrap"></div>
+			<div class="_Warecontent-wrap"></div>
+			<div class="_Warecontent-wrap"></div>
+			<div class="_Warecontent-wrap"></div>
 		</div>
-		<!--bottom-->
+ 
+        <script type="text/html" id="test">    
+		       {{each res as value i}}
+		       <div class="_Warecontent-wrap">
+						<div class="_Warecontent-img">
+							<a href="#">
+								<img alt="时尚休闲牛仔短裤" src={{value.img}}>
+							</a>
+						</div>
+						<p class="_Warecontent-tit1">
+							<a href="#">{{value.tit1}}</a>
+						</p>
+						<p class="_Warecontent-price">
+							￥<span class="_Wareprice">{{value.price}}</span>
+							<span class="_Warerebate">({{value.rebate}}折)</span>
+							<span class="_Wareoldprice">{{value.oldprice}}</span>
+						</p>
+						<p class="_Wareexplain">
+							<a href="#"><span class="_Wareexplain-tag">特价</span>{{value.tit2}}</a>
+						</p>
+				</div>
+			    {{/each}}
+      </script>
+
+        <div class="moreWarepageinat">
+        	
+        </div> 
+        
+        <!--bottom-->
 		<div class="fooster">
 			<div class="bottom">
 				<div class="bottomTOne">
@@ -469,15 +648,12 @@
 	    		天津好乐买信息技术有限公司    Copyright © 2007-2019 OkBuy.com All Rights Reserved <a href="#">津ICP备16005872号-1</a> 京公网安备110105006859   客服电话：400-8610-400 
 	    	</div>
 		</div>
+        
+                
+		<script type="text/javascript" src="js/nav.js"></script>
+		<script type="text/javascript" src="js/search .js"></script>
+		<script type="text/javascript" src="js/commodity1.js"></script>
 		
-
-		
-		<script type="text/javascript" src="js/banner.js"></script>
-		<script type="text/javascript" src="js/content0.js"></script>
-		<script type="text/javascript" src="js/content.js"></script>
-		<script type="text/javascript" src="js/content2.js"></script>
-        <script type="text/javascript" src="js/nav.js" ></script>
-        <script type="text/javascript" src="js/search .js" ></script>
 	</body>
 
 </html>

@@ -1,6 +1,5 @@
 $.ajax("json/content.json")
             .then((res)=>{
-                     console.log(res);
                      obj = res;
                      commodityOne();
             })
@@ -14,11 +13,11 @@ function commodityOne(){
 							    		<span class="tit2">${obj[goods].tit2}</span>
 							    		<span class="tit3">${obj[goods].tit3}</span>
 							    		<span class="time" id="timetwo2">
-								    		<span class="day"><b>0</b>天</span>
-								    		<span class="hour"><b>0</b>时</span>
-								    		<span class="minute"><b>0</b>分</span>
-								    		<span class="second"><b>0</b>秒</span>
-								    		<span class="fsecond"><b>0</b></span>
+								    		<span class="day"><b id="_date">0</b>天</span>
+								    		<span class="hour"><b id="_hours">0</b>时</span>
+								    		<span class="minute"><b id="_minute">0</b>分</span>
+								    		<span class="second"><b id="_second">0</b>秒</span>
+								    		<span class="fsecond"><b id="_date">0</b></span>
 							    		</span>
 							    	</a>
 		                        </div>`;
@@ -27,3 +26,4 @@ function commodityOne(){
                   var he = $(".main1w1220").get(0).offsetHeight
                   $(".main1").height(he);
             }  
+           
