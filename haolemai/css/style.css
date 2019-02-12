@@ -2,8 +2,8 @@
 
 
 body{
-	height: 3000px;
 	overflow: auto;
+	overflow-x: hidden;
 	background: #f5f5f5;	
 }
 
@@ -53,31 +53,49 @@ body a{
 	position: absolute;
 	right: 36px;
 }
-.navMessage a{
-	padding: 0 12px 0 8px;
+.navMessage>a{
+	float: left;
+	padding: 0 14px;
 	line-height:28px ;
 	position: relative;
 	text-decoration: none;
 	font-size: 8px;
 	color: #5a5a5a;
 }
+.navMessage>a:hover{
+	background: #fff;
+	/*border: 1px solid #d9d9d9;*/
+	border-bottom: 0;
+}
+.navinfobtm{
+	display: none;
+	width: 110px;
+	height: 100px;
+	position: absolute;
+	z-index: 200;
+	top: 28px;
+	left: 0;	
+}
+.navinfobtm a{
+	display: block;
+}
 .navMessage .navMessageOne{
 	padding-right:8px;
 }
-.navMessage a .iconfont{
+.navMessage>a .iconfont{
 	font-size: 8px;
 	padding: 0 0 0 4px;
 	
 }
-.navMessage a:after{
+.navMessage>a:after{
 	content: "";
 	display: block;
 	background: #d9d9d9;
-	width: 2px;
+	width: 1px;
 	height: 12px;
 	position: absolute;
 	right: 0;
-	top:2px
+	top:7px
 }
 .navMessage .clearBorder:after{
 	content: "";
@@ -113,6 +131,15 @@ body a{
 	width: 374px;
 	height: 38px;
 	border:3px solid #d70057;
+}
+.list{
+	display: none;
+	position: absolute;
+	top:38px;
+	left:0;
+	width: 20px;
+	height: 40px;
+	background:saddlebrown;
 }
 .logoSearch .btn{
 	float: left;
@@ -159,39 +186,83 @@ body a{
 
 
 .containNavBackground{
+	z-index: 100;
 	width: 100%;
 	background: #000;
+	position: sticky;
+	top:0;
 }
 .containNav{
+	position: relative;
 	width: 1264px;
 	height: 40px;
 	background: #000;
 	margin: 0 auto;
+	
 }
+.SportsLife,.CasualClothing,.Shoes,.Earth{
+	position: absolute;
+	top: 40px;
+	left:32px;
+	z-index: 9999;
+	max-width: 1200px;
+    height: 396px;
+    background-color: #fff;
+    box-shadow:1px 1px 2px #acacac;
+    display: none;
+    line-height: 24px;
+	font-size: 12px;
+}
+
 .containNav ul{
 	margin-left:32px ;
 }
 .containNav li{
 	float:left;
 	width:100px ;
+	height: 40px;	
+}
+.containNav li a{
+	display: block;
+	width:100px ;
 	height: 40px;
 	font-size: 14px;
 	line-height: 40px;
 	text-align: center;
 }
-.containNav .liOne{
+.containNav li a:hover{
+	color: #d70057;
+}
+.colbox{
+	float: left;
+	padding:0 10px ;
+}
+.colbox h3{
+	margin-top:12px ;
+    font-size: 12px;
+    font-weight: bold;
+    color: #D20D33;
+}
+.colbox .content img{
+	width: 300px;
+	height: 240px;
+}
+.SportsLife .catewrap{
+	width:360px;
+}
+.containNav .liOne a{
 	background: #d70057;
 }
 .containNav .liTwo{
 	position: relative;
 	width:122px ;
 }
-.containNav .liThr{
-	margin-left:34px;
+.containNav .liThr a{
+	margin-left:28px;
 	position: relative;
 }
-.containNav .lifor{
-	margin-left:-4px;
+.containNav .lifor a{
+	margin-left:20px;
 }
 .containNav .liThr img{
 	float: left;
@@ -211,8 +282,6 @@ body a{
 .containNav li a{
 	color: #fff;
 }
-
-
 .warp-banner{
 	width: 100%;
 	height: 350px;
@@ -247,4 +316,278 @@ body a{
 	width: 1200px;
 	height: 87px;
 	margin: 0 auto;
+}
+.famousBrand{
+	width: 1200px;
+    height: 194px;
+    overflow: hidden;
+    margin:0 auto 34px;
+}
+.famousBrand .brandinin a{
+	width: 99px;
+    text-align: center;
+    height: 64px;
+    background: #fff;
+    display: block;
+    float: left;
+    border-right: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+
+.whiteBackground{
+	width:100%;
+	background:#fff;
+}
+.centerImg{
+	width: 1200px;
+	margin: 0 auto 34px;
+}
+
+
+.main1{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main1w1220{
+	width: 1220px;
+	position: absolute;
+	top: 0;left: 0;
+	overflow: hidden;
+}
+.commodityBox{
+	float: left;
+	width: 595px;
+	height: 210px;
+	margin: 0 10px 10px 0;
+}
+.commodityBox a{
+	border: 1px solid #e9e7ea;
+    display: block;
+    position: relative;
+    width: 593px;
+    height: 208px;
+}
+
+.commodityBox img{
+	position: absolute;
+    left: 0;
+    top: 0;
+	width: 593px;
+    height: 208px;
+}
+.commodityBox a:hover{
+	border: 1px solid #d70057;
+}
+.commodityBox .tit1,.commodityBox .tit2,.commodityBox .tit3{
+    position: absolute;
+    z-index: 1;
+    left: 0;   
+    color: #333;
+    font-size: 14px;
+    line-height: 18px;
+    width: 200px;
+    text-align: center;
+}
+.commodityBox .tit1{
+	top: 76px;
+}
+.commodityBox .tit2{
+	top: 94px;
+}
+.commodityBox .tit3{
+	top: 144px;
+    color: #d70057;
+    font-size: 20px;
+    font-weight: bold;
+}
+.commodityBox .time{
+	position: absolute;
+    z-index: 2;
+    left: 48px;
+    bottom: 10px;
+    color: #666;
+    font-size: 12px;
+}
+.commodityBox .time span{
+	text-align: left;
+}
+.commodityBox .time b{
+	font-weight:normal ;
+	color: #d70057;
+}
+
+.squareness{
+	width: 1200px;
+	margin: 0 auto;
+}
+.squareness img{
+	width: 100%;
+}
+
+/*------------------------------main2----------------------------*/
+.main2{
+	position: relative;
+	width: 1200px;	
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main2w1220{
+	width: 1220px;
+	position: absolute;
+	top: 0;left: 0;
+	overflow: hidden;
+}
+.merchandise{
+	float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.merchandise a{
+	border: 1px solid #e9e7ea;
+    width: 388px;
+    height: 329px;
+    display: block;
+    position: relative;
+}
+.merchandise a:hover{
+	border: 1px solid #d70057;
+}
+.merchandise img{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 388px;
+    height: 328px;
+}
+.merchandise .merchandiseTitle{
+	position: absolute;
+    z-index: 1;
+    left: 20px;
+    bottom: 50px;
+    color: #333;
+    line-height: 18px;
+    width: 250px;
+    text-align: left;
+    font-size: 18px;
+}
+.merchandise .merchandiseTitle span{
+    color: #d70057;
+    font-weight: bold;
+}
+.merchandise .time2{
+	position: absolute;
+	font-size: 14px;
+    z-index: 1;
+    left: 20px;
+    bottom: 20px;
+    color: #666;
+}
+.merchandise .time2 span{
+	text-align: left;
+}
+.merchandise .time2 b{
+	font-weight:normal ;
+	color: #d70057;
+}
+/*-----------------------bottom----------------------------*/
+.fooster{
+	border-top:1px solid #a6a6a6;
+    margin-top:40px;
+}
+.bottom{
+	border-top:1px solid #c3c3c3;
+    background-color:#e6e6e6;
+    padding:28px 0 0 0;
+}
+.bottomTOne{
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1250px;
+}
+.QRCode{
+	height: 140px;
+    margin-left: 26px;
+    background: #fff;
+    float: left;
+    width: 560px;
+}
+.footer_code{
+	overflow: hidden;
+    width: 480px;
+    margin: 10px 0 0 35px;
+    text-align: center;
+}
+.footer_code .wx_code{
+	margin-top:8px;
+	width:120px;
+	float:left;    
+    margin-left:80px;
+    text-align:center;
+}
+.footer_code img{
+	width: 90px;
+	height: 90px;
+}
+.footer_code .wx_code p {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.bottomNav{
+	float: right;
+}
+.bottomNav li{
+	float: left;
+    width: 120px;
+    display: inline;
+    border-left: solid 1px #fff;
+    margin-right: 30px;
+}
+.bottomNav .title{
+	line-height: 24px;
+    background-color: #fff;
+    margin-bottom: 14px;
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+    color: #999;
+    padding-left: 1em;
+}
+.bottomNav p a{
+	color: #666;
+	font-size: 12px;
+	line-height: 24px;
+	padding-left: 1em;
+}
+.bottomLogo{
+	clear: both;
+	width: 1250px;
+	height:36px;
+	padding-top:40px;
+	text-align: center;
+}
+.bottomLogo img{
+	height: 36px;	
+}
+.about{
+	line-height: 42px;
+    text-align: center;
+    font-size: 12px;
+    color: #d7d7d7;
+}
+.about a{
+	color: #777;
+}
+.copy{
+	background-color: #232323;
+    text-align: center;
+    color: #999;
+    line-height: 24px;
+    font-size: 12px;
+}
+.copy a{
+	color: #999;
 }

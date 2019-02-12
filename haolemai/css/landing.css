@@ -1,0 +1,192 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;    padding: 0;    border: 0;    font-size: 100%;    font: inherit;    vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    display: block;}body {    line-height: 1;}ol, ul {    list-style: none;}blockquote, q {    quotes: none;}blockquote:before, blockquote:after,q:before, q:after {    content: '';    content: none;}table {    border-collapse: collapse;    border-spacing: 0;}
+body{	
+	overflow: auto;
+	overflow-x:hidden;
+}
+
+.landTop{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	background: #fff;
+	position: relative;
+}
+.landTop img{
+	position: absolute;
+	left: 0;top: 0;
+}
+.landTopRight{
+	height: 100px;
+	position: absolute;
+	right: 0;top: 0;
+	line-height: 100px;
+	color: #666;
+    font-size: 14px;
+}
+.landTopRight span{
+	margin-left: 60px;
+}   
+.landTopRight i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url(http://0.js.al.okbuycdn.com/resources/images/v6/common/ui_login.png) -76px -60px no-repeat;
+}
+.warpper{
+	height: 560px;	
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+	
+}
+.warpper .warpbanner{
+	position: absolute;
+	left: 50%;top:0;
+	margin-left: -1000px;
+	text-align: left;
+}
+
+.warp{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.warpperright{
+    float: right;
+    width: 340px;
+    height: 520px;
+    margin: 20px 0 0 0;
+    padding: 0 30px;
+    display: inline;
+    position: relative;
+    background: #fff;
+    z-index: 10;
+}
+
+.warpperLogin{
+	width: 340px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.warpperLogin span{
+    display: inline-block;
+    width: 166px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+.warpperLogin .account{
+	border-right: 1px solid #e0e0e0;
+}
+.warpperLogin .active{
+	color:#d70057;
+}
+
+.accountTab,.scanTab{
+	width: 340px;
+	height: 255px;
+	position: absolute;
+	background:#fff;
+	
+}
+
+.accountuse,.scanuse{
+	height: 46px;
+    width: 328px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    background: #fff;
+    line-height: 46px;
+    padding-left: 10px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.btn{
+	width: 338px;
+    height: 50px;
+    background: #d70057;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.forgetPassword a{
+	line-height: 20px;
+	color: #999;
+	font-size: 12px;
+    float: right;
+}
+
+
+.scanTab{
+	text-align: center;
+}
+.scanTabQRCode{
+	width: 180px;
+    height: 180px;
+}
+.scanTabword{
+	text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin: 28px 0 10px;  
+}
+
+.loginNewParty{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 360px;
+    padding: 16px 30px 16px 10px;
+    background: #f6f6f6;
+}
+.friendshipAccout{
+	float: left;
+}
+
+.friendshipAccout a{
+	display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #e0e0e0;
+}
+.friendshipAccout a i {
+	display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    background: url(http://0.js.al.okbuycdn.com/resources/images/v6/common/ui_login.png) -5px -42px no-repeat;
+}
+.goregister{
+	float: right;
+	color: #666;
+}
+.goregister i{
+	display: inline-block;
+    width: 16px;
+    height: 17px;
+    vertical-align: middle;
+    margin: -3px 5px 0 0;
+    background: url(http://0.js.al.okbuycdn.com/resources/images/v6/common/ui_login.png) -76px -30px no-repeat;
+}
+
+.landBottom{
+	height: 28px;
+    margin: 80px auto 10px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    line-height: 28px;
+}
+      

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/landing.css" />
+
+	<body>
+		<div class="landTop">
+			<img src="http://0.js.al.okbuycdn.com/resources/images/v6/login/login_new_logo.png">
+			<div class="landTopRight">
+				<span class="landTopSpan">
+		            <i></i>天天低价
+		        </span>
+				<span class="landTopSpan">
+		            <i></i>正品保障
+		        </span>
+				<span class="landTopSpan">
+		            <i></i>15天退换货
+		        </span>
+				<span class="landTopSpan">
+		            <i></i>评价晒单有礼
+		        </span>
+			</div>
+		</div>
+
+		<div class="warpper">
+			<img class="warpbanner" src="http://i.okaybuy.cn/static/c302701c79fbd2e6a84be4143a316922.jpg">
+			<div class="warp">
+				<div class="warpperright">
+					<div class="warpperLogin">
+						<span class="account active">账号登录</span>
+						<span class="scan">扫码登录</span>
+					</div>
+					<div class="accountTab">
+						<form>
+							<input class="accountuse" type="text" placeholder="已验证手机/邮箱/用户名">
+							<input class="scanuse" type="password" placeholder="密码">
+							<button class="btn">登录</button>
+							<p class="forgetPassword">
+								<a href="#">忘记密码?</a>
+							</p>
+						</form>
+					</div>
+					<div class="scanTab">
+						<img class="scanTabQRCode " src="">
+						<div class="scanTabword">请使用好乐买APP扫码登录</div>
+						<div class="scanTabdown">
+							<i class="scanTabDowniImg"></i> 下载好乐买APP
+						</div>
+					</div>
+					<div class="loginNewParty">
+						<div class="friendshipAccout">
+							<a title="QQ登录" href="/third_party/login/newqq/API/index.php"><i class="login_icon_qq"></i></a>
+							<a title="微信登录" href="/third_party/login/wechat/login.php?jumpurl="><i class="login_icon_wx"></i></a>
+							<a title="支付宝登录" href="/third_party/login/alipay_login/auth_authorize.php"><i class="login_icon_pay"></i></a>
+							<a title="微博登录" href="/third_party/login/sinaweibo?jumpurl="><i class="login_icon_wb"></i></a>
+							<a title="开心网登录" href="http://www.kaixin001.com/login/connect.php?appkey=93227016320896f5b761ee46fd6d5f2f&amp;re=/third_party/login/kaixin/login.php&amp;t=4" class="noborder"><i class="login_icon_kx"></i></a>
+						</div>
+						<a class="goregister" href="/members/register">
+							<i></i>注册有惊喜
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="landBottom">
+			Copyright © 2007-2019 OkBuy.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天津好乐买信息技术有限公司&nbsp;&nbsp;津B2-20140020&nbsp;&nbsp;京公网安备&nbsp;110105006859
+		</div>111
+
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script>
+    	
+    	    class Stair{
+                constructor(){
+
+                }
+                init(){
+                    this.warpperLogin = $(".warpperLogin");
+                  	this.accountTab = $(".accountTab");
+                  	this.scanTab = $(".scanTab");
+                  	this.bindEvent();
+                }
+                  
+                bindEvent(){
+                	console.log(this.warpperLogin.children().get())
+                  	this.warpperLogin.children().get().forEach(function(item,index){
+                  		$("item").on("click",this.cut.bind(this))
+                  	}.bind(this,index))
+                }
+                cut(index){
+
+                }
+                 
+    	    }
+    	    
+    	    var stair = new Stair();
+            stair.init();
+    	
+    	
+    </script>
+</html>

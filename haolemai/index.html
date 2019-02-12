@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
@@ -7,28 +8,33 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="font/iconfont.css" />
-	
+
 	<body>
-	<script src="http://libs.baidu.com/jquery/1.11.3/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>	
-	
-	<!-- topwrap -->
-	
+		<script src="http://libs.baidu.com/jquery/1.11.3/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+
+		<!-- topwrap -->
+
 		<div class="topwrapBackground">
 			<div class="topwrap">
 				<a class="topImg1" href="#"></a>
 				<a class="topImg2" href="#"></a>
 			</div>
 		</div>
-		
-		
-    <!-- topNav -->
+
+		<!-- topNav -->
 		<div class="topNav">
 			<div class="topNav_container">
 				<div class="navMessage">
 					<a href="#">登陆</a>
 					<a href="#" class="clearBorder navMessageOne">注册</a>
-					<a href="#">我的好乐买 <i class="iconfont">&#xe638;</i></a>
+					<a class="myhao" href="#">我的好乐买 <i class="iconfont">&#xe638;</i>
+						<b class="navinfobtm">
+							<a href="#">我的订单</a>
+							<a href="#">我的收藏</a>
+							<a href="#">我的优惠券</a>
+						</b>
+					</a>
 					<a href="#">手机好乐买<i class="iconfont">&#xe638;</i></a>
 					<a href="#">关注好买乐<i class="iconfont">&#xe638;</i></a>
 					<a href="#">客户服务<i class="iconfont">&#xe638;</i></a>
@@ -36,81 +42,442 @@
 				</div>
 			</div>
 		</div>
-		
 
-	<!-- toplogo -->
-	
+		<!-- toplogo -->
+
 		<div class="toplogo">
 			<h1 class="logo">
 				<img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/logo.png">
 			</h1>
 			<div class="logoSearch">
 				<form>
-					<input id="_search" class="_search" type="search" value="运动现货上架 速戳~"/>
+					<input id="_search" class="_search" type="search" value="运动现货上架 速戳~" />
+					<ul class="list"></ul>
 					<button class="btn">搜索</button>
 					<ul>
-						<li><a href="#">卫衣</a></li>
-						<li><a href="#">卡洛驰</a></li>
-						<li><a href="#">斯凯奇</a></li>
-						<li><a href="#">森马</a></li>
-						<li><a href="#">Adidas</a></li>
-						<li><a href="#">GUESS</a></li>
-						<li><a href="#">美妆个户</a></li>
+						<li>
+							<a href="#">卫衣</a>
+						</li>
+						<li>
+							<a href="#">卡洛驰</a>
+						</li>
+						<li>
+							<a href="#">斯凯奇</a>
+						</li>
+						<li>
+							<a href="#">森马</a>
+						</li>
+						<li>
+							<a href="#">Adidas</a>
+						</li>
+						<li>
+							<a href="#">GUESS</a>
+						</li>
+						<li>
+							<a href="#">美妆个户</a>
+						</li>
 					</ul>
-			   </form>				
-			</div>			
+				</form>
+			</div>
 			<div class="shopcar">
 				<span>购物车</span>
 				<span>去购物车结算（0）</span>
 			</div>
 		</div>
-	    
-	    
-	<!-- containNav  -->
-	    <div class="containNavBackground">
-		    <div class="containNav">
-		    	<ul>
-		    		<li class="liOne"><a href="#">首页</a></li>
-		    		<li class="liTwo"><a href="#"></a></li>
-		    		<li><a href="#">运动生活</a></li>
-		    		<li><a href="#">休闲服饰</a></li>
-		    		<li><a href="#">男女名鞋</a></li>
-		    		<li class="liThr"><a href="#"><img src="http://i.okaybuy.cn/images/multipic/new/201701/7d/7de29d4226bbf3855eb7eca34a680cc5.gif" />全球购</a></li>
-		    		<li class="lifor"><a href="#">家居包配</a></li>
-		    	</ul>
-		    </div>
-	    </div>
-	    
-	    
-	<!-- banner -->
-	    <div class="warp-banner">
-	    		<div class="swiper-container">
-				    <div class="swiper-wrapper">
-				        <div class="swiper-slide"><img src="http://i.okaybuy.cn/static/dcc92c79479f3b977962bdfd1547c4af.jpg"></div>
-				        <div class="swiper-slide"><img src="http://i.okaybuy.cn/static/e26483cd8d30a2886560ab0c9c6be713.jpg"></div>
-				        <div class="swiper-slide"><img src="http://i.okaybuy.cn/static/08e0d339ce076ea56fcc25c8b9245e35.jpg"></div>
-				        <div class="swiper-slide"><img src="http://i.okaybuy.cn/static/3b46f3bca80d465b3af4a696ccd7d3ca.jpg"></div>
-				        <div class="swiper-slide"><img src="http://i.okaybuy.cn/static/aa6c60bf3904172477c6a6017d537110.jpg"></div>
-				        <div class="swiper-slide"><img src="http://i.okaybuy.cn/static/dc3f6a90fa356183222b874f842a74b7.jpg"></div> 
-				    </div>
-				    <div class="rltn">
-					    <div class="swiper-button-prev"></div>
-				        <div class="swiper-button-next"></div>
-			        </div>
-			        <div class="swiper-scrollbar"></div>       
-			        <div class="swiper-pagination"></div>
-			    </div>
-	    </div>
-	<!-- subBanner -->  
-	    <div class="subBanner">
-	    	<img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/ad_5.png">
-	    </div>
-	
-	<!-- famousBrand --> 
-	    <div class="famousBrand">
-	    	
-	    </div>
-	
-	    <script type="text/javascript" src="js/banner.js" ></script>
+
+		<!-- containNav  -->
+		<div class="containNavBackground">
+			<div class="containNav">
+				<ul>
+					<li class="liOne">
+						<a href="#">首页</a>
+					</li>
+					<li class="liTwo">
+						<a href="#"></a>
+					</li>
+					<li>
+						<a id="erOne" href="#">运动生活</a>
+					</li>
+					<li>
+						<a id="erTwo" href="#">休闲服饰</a>
+					</li>
+					<li>
+						<a id="erThr" href="#">男女名鞋</a>
+					</li>
+					<li class="liThr">
+						<a id="erFor" href="#"><img src="http://i.okaybuy.cn/images/multipic/new/201701/7d/7de29d4226bbf3855eb7eca34a680cc5.gif" />全球购</a>
+					</li>
+					<li class="lifor">
+						<a href="#">家居包配</a>
+					</li>
+				</ul>
+				<div class="SportsLife">
+					<div class="colbox">
+						<h3>品类导购</h3>
+						<div class="catewrap">
+							<h3>运动鞋</h3>
+							<p class="context">
+								<a href="#">跑步鞋</a>
+								<a href="#">复古鞋</a>                    
+                                <a href="#">休闲鞋</a>
+								<a href="#">帆布鞋</a>
+								<a href="#">板鞋</a>
+								<a href="#">运动生活系列</a>
+								<a href="#">滑板鞋</a>
+								<a href="#">篮球鞋</a>
+								<a href="#">凉鞋/凉拖</a>
+                                <a href="#">健步鞋</a>
+								<a href="#">足球鞋</a>
+								<a href="#">羽毛球鞋</a>
+								<a href="#">网球鞋</a>
+								<a href="#">乒乓球鞋</a>
+							</p>
+						</div>
+						<div class="catewrap">
+							<h3>运动服</h3>
+							<p class="context">								
+								<a href="#">夹克/外套</a>
+								<a href="#">卫衣</a>
+								<a href="#">棉服</a>
+								<a href="#">羽绒服</a>
+								<a href="#">长裤</a>
+								<a href="#">马甲</a>
+								<a href="#">T恤</a>
+								<a href="#">POLO</a>
+								<a href="#">胸衣</a>
+								<a href="#">背心</a>
+								<a href="#">短裤</a>
+								<a href="#">裙装</a>
+								<a href="#">套装</a>
+							</p>	
+						</div>
+                           <div class="catewrap">
+							<h3>儿童专区</h3>
+							<p class="context">
+								<a href="#">运动鞋</a>
+								<a href="#">休闲鞋</a>                    
+                                <a href="#">跑步鞋</a>
+								<a href="#">篮球鞋</a>
+								<a href="#">童靴</a>
+								<a href="#">童装</a>
+							</p>
+						</div>
+						<div class="catewrap">
+							<h3>运动周边</h3>
+							<p class="context">
+								<a href="#">袜子</a>
+                                <a href="#">帽子</a> 
+                                <a href="#">护具</a>
+								<a href="#">球类</a>
+								<a href="#">泳具</a>
+                                <a href="#">球拍</a>
+								<a href="#">运动休闲包</a>
+							</p>
+						</div>
+					</div>
+					<div class="colbox">			
+						<h3>运动导购</h3>
+                        <div class="catewrap">											
+							<h3>早春穿搭</h3>											
+							<div class="context">				
+								<a href="#">内搭卫衣</a>			
+								<a href="#">外套</a>			
+								<a href="#">收腿运动裤</a>
+                                <a href="#">贝壳头</a>				
+								<a href="#">小椰子</a>
+                                <a href="#">AIR MAX</a>			
+								<a href="#">最新鞋款</a>	
+							</div>						
+                        </div>					
+		
+						<div class="catewrap">		
+                            <h3>跑步运动</h3>								
+							<div class="context">	
+								<a href="#">跑步鞋品</a>
+								<a href="#">BOOST</a>
+								<a href="#">ZOOM</a>
+								<a href="#">Free</a>
+								<a href="#">Lunar</a>
+								<a href="#">李宁弧</a>
+								<a href="#">李宁云</a>
+								<a href="#">BOOST</a>
+								<a href="#">ZOOM</a>
+								<a href="#">Free</a>
+								<a href="#">Lunar</a>
+								<a href="#">李宁弧</a>
+								<a href="#">李宁云</a>
+							</div>	
+						</div>		
+						<div class="catewrap">		
+                            <h3>球类运动</h3>								
+							<div class="context">	
+								<a href="#">内搭卫衣</a>			
+								<a href="#">内搭卫衣</a>			
+								<a href="#">外套</a>			
+								<a href="#">收腿运动裤</a>
+                                <a href="#">贝壳头</a>				
+								<a href="#">小椰子</a>
+							</div>	
+						</div>		
+						<div class="catewrap">		
+							<h3>健身/瑜伽/游泳</h3>	
+							<div class="context">	
+								<a href="#">内搭卫衣</a>			
+								<a href="#">外套</a>			
+								<a href="#">收腿运动裤</a>
+                                <a href="#">贝壳头</a>				
+								<a href="#">小椰子</a>
+                                <a href="#">AIR MAX</a>			
+								<a href="#">最新鞋款</a>	
+							</div>	
+						</div>		
+					</div>
+					<div class="colbox">
+						<h3>品牌导购</h3>
+						<div class="content">
+							<a href="#"><img src="http://img1.imgtn.bdimg.com/it/u=1992085767,102835282&fm=26&gp=0.jpg" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="CasualClothing">
+					<div class="colbox">
+						<h3>品牌导购</h3>
+						<div class="content">
+							<a href="#"><img src="http://pic31.nipic.com/20130720/5793914_122325176000_2.jpg" /></a>
+						</div>
+					</div>
+					<div class="colbox">
+						<h3>精品服饰</h3>
+						<div class="catewrap">
+							<h3>男装</h3>
+							<p class="context">
+								<a href="#">男衬衫</a>
+								<a href="#">男T恤</a>                    
+                                <a href="#">男卫衣</a>
+								<a href="#">南迦克</a>
+								<a href="#">板鞋</a>
+								<a href="#">运动生活系列</a>
+								<a href="#">滑板鞋</a>
+								<a href="#">篮球鞋</a>
+								<a href="#">凉鞋/凉拖</a>
+                                <a href="#">健步鞋</a>
+								<a href="#">足球鞋</a>
+								<a href="#">羽毛球鞋</a>
+								<a href="#">网球鞋</a>
+								<a href="#">乒乓球鞋</a>
+							</p>
+						</div>
+						<div class="catewrap">
+							<h3>女装</h3>
+							<p class="context">								
+								<a href="#">女衬衫</a>
+								<a href="#">女T恤</a>
+								<a href="#">棉服</a>
+								<a href="#">羽绒服</a>
+								<a href="#">长裤</a>
+								<a href="#">胸衣</a>
+								<a href="#">背心</a>
+								<a href="#">短裤</a>
+								<a href="#">裙装</a>
+								<a href="#">套装</a>
+							</p>	
+						</div>
+				   </div>
+				</div>
+				<div class="Shoes">					
+					<div class="colbox">
+						<h3>男鞋</h3>
+						<p class="context">								
+								<a href="#">休闲鞋</a>
+								<a href="#">球鞋</a>
+								<a href="#">正装鞋</a>
+								<a href="#">尚无鞋</a>
+								<a href="#">板鞋</a>
+								<a href="#">伐木写</a>
+								<a href="#">咚咚鞋</a>
+								<a href="#">短裤</a>
+								<a href="#">裙装</a>
+								<a href="#">套装</a>
+						</p>	
+					</div>
+					<div class="colbox">
+						<h3>品牌导购</h3>
+						<div class="content">
+							<a href="#"><img src="http://pic27.nipic.com/20130225/4746571_081826094000_2.jpg" /></a>
+						</div>
+					</div>
+					<div class="colbox">
+						<h3>女鞋</h3>
+						<p class="context">								
+								<a href="#">休闲鞋</a>
+								<a href="#">球鞋</a>
+								<a href="#">正装鞋</a>
+								<a href="#">尚无鞋</a>
+								<a href="#">板鞋</a>
+								<a href="#">伐木写</a>
+								<a href="#">咚咚鞋</a>
+								<a href="#">短裤</a>
+								<a href="#">裙装</a>
+								<a href="#">套装</a>
+						</p>	
+					</div>
+				</div>
+				<div class="Earth">
+					<div class="colbox">
+						<h3>全球购</h3>
+						<div class="content">
+							<a href="#"><img src="http://upload.mnw.cn/2017/0814/1502698443566.jpg" /></a>
+						</div>
+					</div>
+					<div class="colbox">
+						<h3>全球购</h3>
+						<div class="content">
+							<a href="#"><img src="http://baiducdn.pig66.com/uploadfile/2017/0511/20170511074935785.jpg" /></a>
+						</div>
+					</div>
+					<div class="colbox">
+						<h3>全球购</h3>
+						<div class="content">
+							<a href="#"><img src="http://www.cu-market.com.cn/editor/attached/image/20150819/20150819143672957295.jpg" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- banner -->
+		<div class="warp-banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/dcc92c79479f3b977962bdfd1547c4af.jpg"></div>
+					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/e26483cd8d30a2886560ab0c9c6be713.jpg"></div>
+					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/08e0d339ce076ea56fcc25c8b9245e35.jpg"></div>
+					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/3b46f3bca80d465b3af4a696ccd7d3ca.jpg"></div>
+					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/aa6c60bf3904172477c6a6017d537110.jpg"></div>
+					<div class="swiper-slide"><img src="http://i.okaybuy.cn/static/dc3f6a90fa356183222b874f842a74b7.jpg"></div>
+				</div>
+				<div class="rltn">
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				<div class="swiper-scrollbar"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!-- subBanner -->
+		<div class="subBanner">
+			<img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/ad_5.png">
+		</div>
+		<!--famousBrand-->
+
+		<div class="famousBrand">
+			<div class="brandinin">
+				<!--json数据 -->
+			</div>
+		</div>
+
+		<!--content-->
+		<div class="whiteBackground">
+			<div class="centerImg">
+				<img src="http://i.okaybuy.cn/static/1fe7c1c9bf745d6a513f55ea345f38f8.jpg" />
+			</div>
+        <!--main1-->
+			<div class="main1">
+				<div class="main1w1220">
+				<!--json结构-->
+				</div>
+			</div>
+	    <!-- -->
+			<div class="squareness">
+				<div class="squareness"><img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/fg_3.png"></div>
+				<a href="#" target="_blank"><img src="http://i.okaybuy.cn/static/e428389ca0e796cf4373dbdff36e3349.jpg" width="1200" height="150"></a>
+				<div class="squareness"><img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/fg_3.png"></div>
+			</div>
+		<!--main2-->
+			<div class="main2">
+				<div class="main2w1220">
+				<!--json结构-->
+				</div>
+			</div>
+		</div>
+		<!--bottom-->
+		<div class="fooster">
+			<div class="bottom">
+				<div class="bottomTOne">
+					<div class="QRCode">
+						<div class="footer_code" >
+				            <div class="wx_code" >
+				               <img src="http://0.js.al.okbuycdn.com/resources/images/v6/common/code_client.png">
+				                <p>好乐买手机客户端</p>
+				            </div>
+				            <div class="wx_code">
+				                <img src="http://0.js.al.okbuycdn.com/resources/images/v6/common/code_public.jpg">
+				                <p>好乐买微信公众号</p>
+				            </div>
+				        </div>
+					</div>
+					<div class="bottomNav">
+						<ul>
+							<li>
+								<p class="title">购物指南</p>
+								<p><a href="#">购物流程</a></p>
+								<p><a href="#">订购方式</a></p>
+								<p><a href="#">常见问题</a></p>
+								<p><a href="#">隐私政策</a></p>
+							</li>
+							<li>
+								<p class="title">配送方式</p>
+								<p><a href="#">快递配送</a></p>
+								<p><a href="#">配送时间</a></p>
+							</li>
+							<li>
+								<p class="title">支付方式</p>
+								<p><a href="#">支付方式</a></p>
+								<p><a href="#">代金券</a></p>
+							</li>
+							<li>
+								<p class="title">售后服务 </p>
+								<p><a href="#">退换货政策</a></p>
+								<p><a href="#">退款说明</a></p>
+								<p><a href="#">联系客服</a></p>
+							</li>
+						</ul>
+					</div>
+					<div class="bottomLogo">
+							<a href="#" title="支付宝特约商家">
+								<img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/okbuy1-03.png" alt="支付宝特约商家">
+							</a>
+							<a href="#" title="4月29日首都网络安全日">
+								<img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/okbuy1-05.png" alt="">
+							</a>
+							<a href="#" title="经营性网站备案中心">
+								<img src="http://i.okaybuy.cn/images/multipic/new/201508/90/902c39b52902b3bd4ab500babad4e14a.png" alt="">
+							</a>
+							<a href="#" title="朝阳网警">
+								<img src="http://0.js.al.okbuycdn.com/resources/images/v6/index/bjwj.jpg">
+							</a>
+					</div>
+					<div class="about">
+						<a href="#">公司介绍</a> | 
+						<a href="#">加入我们</a> | 
+						<a href="#">联系我们</a> | 
+						<a href="#">友情链接</a></p>
+					</div>
+				</div>
+	    	</div>
+	    	<div class="copy">
+	    		天津好乐买信息技术有限公司    Copyright © 2007-2019 OkBuy.com All Rights Reserved <a href="#">津ICP备16005872号-1</a> 京公网安备110105006859   客服电话：400-8610-400 
+	    	</div>
+		</div>
+		
+
+		
+		<script type="text/javascript" src="js/banner.js"></script>
+		<script type="text/javascript" src="js/content0.js"></script>
+		<script type="text/javascript" src="js/content.js"></script>
+		<script type="text/javascript" src="js/content2.js"></script>
+        <script type="text/javascript" src="js/nav.js" ></script>
+        <script type="text/javascript" src="js/search .js" ></script>
 	</body>
+
 </html>
