@@ -1,0 +1,301 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;    padding: 0;    border: 0;    font-size: 100%;    font: inherit;    vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    display: block;}body {    line-height: 1;}ol, ul {    list-style: none;}blockquote, q {    quotes: none;}blockquote:before, blockquote:after,q:before, q:after {    content: '';    content: none;}table {    border-collapse: collapse;    border-spacing: 0;}
+
+body{
+	height: 3000px;
+	overflow: auto;
+	overflow-x: hidden;
+	background: #f5f5f5;	
+}
+
+body a{
+	text-decoration: none;
+}
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+.detailsmain{
+	width: 1200px;
+}
+.detailsmain::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.detailsmain-img{
+    z-index: 999;
+    width: 450px;
+    height: 450px;
+    cursor: move;
+}
+.detailsmain-img img{
+	width: 100%;
+	height: 100%;
+}
+.detailsmain-explain{
+	float: left;
+    margin-left: 29px;
+    width: 719px;
+}
+.detailsmain-tit1{
+	font-size: 16px;
+    margin-top: 6px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.detailsmain-morebrand{
+	float: right;
+    line-height: 20px;
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+}
+.detailsmain-prod{
+    color: #999;
+    margin-top: 14px;
+    display: inline-block;
+    width: 719px;
+    background: #f6f6f6;
+}
+.detailsmain-prod-price{
+	padding: 7px 0 12px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+
+.detailsmain-prod-pricetxt{
+	display: inline-block;
+    padding-left: 20px;
+    width: 56px;
+    color: #535353;
+}
+.detailsmain-prod-colorred{
+    top: 2px;
+    font-size: 24px;
+    color: #d70057;
+}
+.prodPrice-oldnum{
+    text-decoration: line-through;
+    margin: 0 10px;
+    color: #999;
+    font-size: 14px;
+}
+.detailsmain-prodCount{
+	height: 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 19px;
+    border-radius: 24px;
+    line-height: 20px;
+    padding: 0 12px;
+    background: #f66b8c;
+}
+
+.detailsmain-time{
+	margin-top: 10px;
+    height: 20px;
+    color: #fff;
+    line-height: 20px;
+}
+.detailsmain-timetxt{
+	float: left;
+    padding-left: 20px;
+    width: 56px;
+    color: #535353;
+    font-size: 12px;
+}
+.time span{
+	margin-right:8px ;
+	color: #434343;
+}
+.time span i{
+	display: inline-block;
+    padding: 0 8px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-right: 8px;
+    background-color: #000;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+} 
+.time span .special-I{
+	background:#d70057;
+}
+
+.detailsmain-activitywrap{
+	padding-top: 12px;
+}
+.detailsmain-activity{
+	float: left;
+    display:block;
+    width: 34px;
+    text-align: center;
+    margin:5px 20px;
+    line-height: 20px;
+    color: #535353;
+    background: #d70057;
+}
+.detailsmain-prodoutlets{
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+.detailsmain-prodoutlets span{
+	background: #d70057;
+    color: #fff;
+    padding: 0 12px;
+    height: 22px;
+    line-height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.detailsmain-prodoutlets a{
+	color: #535353;
+}
+.detailsmain-prodoutlets a:hover{
+	color: #535353;
+}
+.detailsmain-activitywrap2{
+	padding:5px 0 16px 74px;
+}
+.detailsmain-colorImg{ 
+	float: left;
+    width: 643px;
+}
+.detailsmain-colorImg span{
+	display: block;
+    width: 59px;
+    height: 59px;
+    float: left;
+    border: 1px solid #d70057;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.detailsmain-colorImg span .sddalok2 img{
+	width: 59px;
+    height: 59px;
+}
+.detailsmain-colorImg i{
+	opacity: 0.8;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background:#f30;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.detailsmainSize{
+	color: #F66B8C;
+} 
+.detailsmain-color,.detailsmain-size,.detailsmain-number{
+	margin-top:16px ;
+	overflow: hidden;
+}
+.detailsmain-number{
+	margin-top:0 ;
+}
+.detailsmain-size .detailsmain-prodoutlets a{
+	display: inline-block;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 5px 17px;
+    margin:5px 5px 0;
+}
+.detailsmain-size .detailsmain-prodoutlets a:hover{
+	border: 1px solid #d70057;
+}
+.detailsmain-selectCount li{
+	float: left;
+}
+.detailsmain-selectCount{
+	float: left;
+	width: 88px;
+	height: 30px;
+	border:1px solid #ccc;
+}
+.detailsmain-selectCount .reduce,.detailsmain-selectCount .add{
+	display: block;
+	width: 28px;
+    height: 28px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #8c8b8b;
+    background: #f9f9f9;
+    line-height: 30px;
+}
+.detailsmain-number-input input{
+	width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 26px;
+    border: 0; 
+}
+.detailsmain-cart{
+	margin: 40px 0 0 76px;
+    zoom: 1;
+}
+.detailsmain-cartBtn{
+	height: 50px;
+    width: 250px;
+    padding-left: 32px;
+    border: 0;
+    cursor: pointer;
+    background: #d70057 url(http://0.js.al.okbuycdn.com/resources/images/v6/product/detail/cartbtnbg.png) 59px 17px no-repeat;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 1px;
+}
+.detailsmain-service{
+	margin: 20px 0 50px;
+	padding: 10px 0 10px 76px;
+    width: 630px;
+    height: 32px;
+    border-color: #dcdcdc;
+    border-width: 1px 0;
+    border-style: dashed;
+    background: url(http://0.js.al.okbuycdn.com/resources/images/v6/product/detail/okservice.png) 72px 10px no-repeat;
+}
+
+.detailsmainlist{
+	background: #fff;
+	width: 1198px;
+	height: 48px;
+	margin: 0 auto;
+	font-size: 14px;
+	border:1px solid #d9d9d9;
+	position: sticky;
+	top: 0;
+}
+.detailsmainlist::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.detailsmain-nav a{
+	float: left;
+    color: #333;
+    display: block;   
+    width: 140px;
+    height: 48px;
+    line-height: 47px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+}
+.detailsmain-nav .detailsmainlist-nav-one{
+	color:#d70057;
+	border-bottom:2px solid #d70057;
+}
