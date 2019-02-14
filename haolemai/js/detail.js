@@ -1,12 +1,11 @@
 
-
+var indexValue = 0;
 var Alldata = eval(localStorage.getItem("repertory"));
-var indexValue = location.hash;
-var reg = /^#/;
-indexValue = indexValue.replace(reg,"");
-
-console.log(indexValue)
-console.log(Alldata[indexValue].tit1)
+if(location.hash !== ""){
+	indexValue = location.hash;
+	var reg = /^#/;
+    indexValue = indexValue.replace(reg,"");
+} 
 
 var detaimg = '<img src="'+Alldata[indexValue].img+'"/>'
 //var detaimg2 = '<img src="'+Alldata[indexValue].img2+'"/>'
@@ -59,8 +58,56 @@ function details_mousemove(evt){
     $(".detailsmain-selectBox").css({"left":_left+"px"})
 	$(".detailsmain-selectBox").css({"top":_top+"px"})
 	
-	
-	
 	$(".detailsmain-img-big img").css({"left":_left *(-1) * ratio + "px"});
 	$(".detailsmain-img-big img").css({"top":_top *(-1) * ratio + "px"});
 }
+
+/*----------------------------楼梯--------------------------*/
+
+    var sdsae =  $(".detailsmain-nav").children()
+    var feasd =  $(".StairsAll").children()
+    var indexArray = [];
+    var stairsArray = [];
+
+     
+    for(var i = 0 ; i < feasd.length ; i ++){
+                var ele = feasd.eq(i)
+                stairsArray.push({
+                    asdp : Math.round(ele.offset().top),
+                })
+            }
+    console.log(stairsArray);
+    for(let i = 0 ; i < sdsae.length ; i ++){
+            sdsae.eq(i).bind("click",i,function(){
+              	$(window).scrollTop(stairsArray[i].asdp-$(".detailsmainlist").height());
+              	sdsae.eq(i).addClass("nav-Incommon-a");
+              	sdsae.eq(i).siblings().removeClass("nav-Incommon-a")
+             })
+            }
+
+
+//  $(window).on("scroll",StairsScroll)
+//  
+//  function StairsScroll(){
+//  	console.log($(window).scrollTop());
+//  	console.log($(".StairsOne").offset().top+$(".detailsmainlist").height());
+//	
+//  }
+    
+    
+//  $(".airsOne").on("click",function(){
+//  	$(window).scrollTop($(".StairsOne").offset()
+//  	         .top-$(".detailsmainlist").height())
+//  })
+//  $(".airsTwo").on("click",function(){
+//  	$(window).scrollTop($(".StairsTwo").offset()
+//  	.top-$(".detailsmainlist").height())
+//  })
+//  $(".airsThr").on("click",function(){
+//  	$(window).scrollTop($(".StairsThr").offset()
+//  	.top-$(".detailsmainlist").height())
+//  })
+//  $(".airsFou").on("click",function(){
+//  	$(window).scrollTop($(".StairsFou").offset()
+//  	.top-$(".detailsmainlist").height())
+//  })

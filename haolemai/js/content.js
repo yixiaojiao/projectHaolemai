@@ -7,7 +7,7 @@ function commodityOne(){
                   var html = "";
                   for(var goods in obj){
                         html += `<div class="commodityBox">
-			                        <a href="#" target="_blank">
+			                        <a href="#">
 							    		<img src=${obj[goods].img} alt="">
 							    		<span class="tit1">${obj[goods].tit1}</span>
 							    		<span class="tit2">${obj[goods].tit2}</span>
