@@ -53,13 +53,13 @@
 					</div>
 					<div class="loginNewParty">
 						<div class="friendshipAccout">
-							<a title="QQ登录" href="/third_party/login/newqq/API/index.php"><i class="login_icon_qq"></i></a>
-							<a title="微信登录" href="/third_party/login/wechat/login.php?jumpurl="><i class="login_icon_wx"></i></a>
-							<a title="支付宝登录" href="/third_party/login/alipay_login/auth_authorize.php"><i class="login_icon_pay"></i></a>
-							<a title="微博登录" href="/third_party/login/sinaweibo?jumpurl="><i class="login_icon_wb"></i></a>
-							<a title="开心网登录" href="http://www.kaixin001.com/login/connect.php?appkey=93227016320896f5b761ee46fd6d5f2f&amp;re=/third_party/login/kaixin/login.php&amp;t=4" class="noborder"><i class="login_icon_kx"></i></a>
+							<a title="QQ登录" href="#"><i class="login_icon_qq"></i></a>
+							<a title="微信登录" href="#"><i class="login_icon_wx"></i></a>
+							<a title="支付宝登录" href="#"><i class="login_icon_pay"></i></a>
+							<a title="微博登录" href="#"><i class="login_icon_wb"></i></a>
+							<a title="开心网登录" href="#" class="noborder"><i class="login_icon_kx"></i></a>
 						</div>
-						<a class="goregister" href="/members/register">
+						<a class="goregister" href="#">
 							<i></i>注册有惊喜
 						</a>
 					</div>
@@ -74,31 +74,27 @@
 	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script>
     	
-    	    class Stair{
-                constructor(){
-
-                }
-                init(){
-                    this.warpperLogin = $(".warpperLogin");
-                  	this.accountTab = $(".accountTab");
-                  	this.scanTab = $(".scanTab");
-                  	this.bindEvent();
-                }
-                  
-                bindEvent(){
-                	console.log(this.warpperLogin.children().get())
-                  	this.warpperLogin.children().get().forEach(function(item,index){
-                  		$("item").on("click",this.cut.bind(this))
-                  	}.bind(this,index))
-                }
-                cut(index){
-
-                }
-                 
-    	    }
-    	    
-    	    var stair = new Stair();
-            stair.init();
+    	$(".account").click(function(){
+    		$(".accountTab").css({
+    			"z-index":999,
+    		});
+    		$(".scanTab").css({
+    			"z-index":2,
+    		});
+    		$(".account").addClass("active");
+    		$(".scan").removeClass("active");
+    	})
+    	
+    	$(".scan").click(function(){
+    		$(".scanTab").css({
+    			"z-index":999,
+    		});
+    		$(".accountTab").css({
+    			"z-index":2,
+    		});
+    		$(".scan").addClass("active");
+    		$(".account").removeClass("active");
+    	})
     	
     	
     </script>

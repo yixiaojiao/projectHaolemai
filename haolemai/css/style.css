@@ -221,16 +221,20 @@ body a{
 	top: 40px;
 	left:32px;
 	z-index: 9999;
-	max-width: 1200px;
-    height: 396px;
+	min-width: 400px;
+    height: 386px;
     background-color: #fff;
     box-shadow:1px 1px 2px #acacac;
     display: none;
     line-height: 24px;
 	font-size: 12px;
+	padding:10px 0 ;
 }
 .SportsLife a,.CasualClothing a,.Shoes a,.Earth a{
 	color:#333;
+}
+.SportsLife a:hover,.CasualClothing a:hover,.Shoes a:hover,.Earth a:hover{
+	color:brown;
 }
 .containNav ul{
 	margin-left:32px ;
@@ -256,13 +260,22 @@ body a{
 }
 .colbox{
 	float: left;
-	padding:10px ;
+	padding:0 30px 0 15px;
+	margin:10px 0;
+	height: 366px ;
 }
+.colbox h2{
+	margin-top:12px ;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #D20D33;
+}
+
 .colbox h3{
 	margin-top:12px ;
     font-size: 12px;
     font-weight: bold;
-    color: #D20D33;
+    color: olivedrab;
 }
 .colbox .content img{
 	width: 300px;

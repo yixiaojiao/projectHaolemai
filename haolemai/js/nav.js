@@ -33,3 +33,8 @@ $("#erFor,.Earth").mouseenter(function(){
 $("#erFor,.Earth").mouseleave(function(){
 	$(".Earth").hide();
 })
+
+
+
+$(".SportsLife .colbox:gt(0),.CasualClothing .colbox:gt(0),.Earth .colbox:gt(0),.Shoes .colbox:gt(0)")
+.css({"border-left":"1px dashed #999"})

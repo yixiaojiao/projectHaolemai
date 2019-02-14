@@ -94,8 +94,10 @@ body{
 	width: 340px;
 	height: 255px;
 	position: absolute;
-	background:#fff;
-	
+	background:#fff;	
+}
+.accountTab{
+	z-index: 10;
 }
 
 .accountuse,.scanuse{
@@ -189,4 +191,73 @@ body{
     font-size: 12px;
     line-height: 28px;
 }
-      
+
+
+
+/*注册*/  
+
+.warpperregister{
+	overflow: hidden;
+    margin: 30px 0;
+} 
+.warpper-reg{
+	font-size: 22px;
+    font-weight: bold;
+    color: #333;
+} 
+.warpper-reglogin{
+	float: right;
+    color: #d70057;
+}
+.warpperipone{
+    float: left;
+    width: 346px;
+}
+.warpperipone input,.warpperSetup input{
+	height: 46px;
+    width: 325px;
+    font-size: 14px;
+    background: #fff;
+    line-height: 46px;
+    margin-bottom: 13px;
+    padding-left: 10px;
+}
+.warpperipone-show,.warpperSetup-show{
+	display: block;
+	height: 16px;
+}
+.warpperVerification input{
+	height: 46px;
+    width: 160px;
+    font-size: 14px;
+    background: #fff;
+    line-height: 46px;
+    margin-bottom: 13px;
+    padding-left: 10px;
+}
+.Verification-p{
+	text-align: center;
+	width: 100px;
+	float: right;
+    margin: 7px 1px 0 39px;
+    display: inline;
+    cursor: pointer;
+}
+.warpper-fastener input{
+	width: 338px;
+    height: 50px;
+    background: #d70057;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.warpperprotocol{
+	font-size: 12px;
+    color: #999;
+}
+.warpperprotocol a{
+	color: #d70057;
+}

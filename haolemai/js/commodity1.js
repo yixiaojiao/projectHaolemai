@@ -21,21 +21,17 @@
                         keepShowPN:true,
                         callback : page
                   });
+                  
+                  
             	function page(api){
-            		    count ++;
+            		    count = $(".moreWarepageinat .active").text();
                         var min = (api.getCurrent() - 1) * warenumber;
                         var max = api.getCurrent() * warenumber
                         var html = template("test",{ res : listArray.slice( min,max )  })
                         $(".moreWarecontent").html(html);
-                        var sioio = document.getElementById("sioio");
-                        var koisa = document.getElementById("koisa");
-                        var kosaa = document.getElementById("kosaa");
-			            sioio.innerHTML = listArray.length;
-			            koisa.innerHTML = count;
-			            kosaa.innerHTML = Math.ceil(listArray.length/40);
-			            if(count == Math.ceil(listArray.length/40)){
-			            	count = 0;
-			            }
+			            $("#sioio").text(listArray.length);
+			            $("#koisa").text(count);
+			            $("#kosaa").text(Math.ceil(listArray.length/40));
                     }
 	            	page({
 	                        getCurrent : function(){
@@ -59,9 +55,10 @@
 				    var target = e.target || e.srcElement;
 				    if(target.className === "moreWarecontent")  return false;
 				    var $WarecontentWrap = $(target).parents("._Warecontent-wrap") || $(target);
-				    var index = $WarecontentWrap.attr("data-index");
+				    var index = parseInt($WarecontentWrap.attr("data-index"))+(count-1)*warenumber;
 //				    clothData = listArray[index];		
 				    console.log(index);
+				    console.log(count);
 				    location.href = "detail.html#"+index;
 			    }
 			
