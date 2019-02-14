@@ -10,7 +10,19 @@
  *    minute : string,
  *    second : string
  *  }
- * */ 
+ * */
+function randomInt(min , max){
+      return min + parseInt( Math.random() * (max - min + 1));
+}
+function randomColor(){
+      var r = randomInt(0 , 255),
+          g = randomInt(0 , 255),
+          b = randomInt(0 , 255)
+      var _randomColor = "rgb("+ r +","+ g +"," + b + ")";
+      return _randomColor;
+}
+
+
 
 function countDown(dateString){
       var target = new Date(dateString);

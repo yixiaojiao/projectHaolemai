@@ -109,7 +109,7 @@ body{
     line-height: 46px;
     padding-left: 10px;
     border: 1px solid #e0e0e0;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
 }
 
 .btn{
@@ -209,7 +209,7 @@ body{
 	float: right;
     color: #d70057;
 }
-.warpperipone{
+.warpperipone,.warpperSetup,.warpperVerification{
     float: left;
     width: 346px;
 }
@@ -219,12 +219,42 @@ body{
     font-size: 14px;
     background: #fff;
     line-height: 46px;
-    margin-bottom: 13px;
     padding-left: 10px;
 }
-.warpperipone-show,.warpperSetup-show{
+.warpperipone-show,.warpperSetup-show,.warpperVerification-show{
 	display: block;
-	height: 16px;
+	height: 30px;
+	text-align: left;
+	line-height: 30px;
+	font-size: 12px;
+	visibility: hidden;
+}
+.warpperSetup{
+	position: relative;
+}
+.warpperSetupEye{	
+    width: 20px;
+    height: 38px;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.warpperSetupEye.Eyeinvisible{
+	background: url(http://0.js.al.okbuycdn.com/resources/images/v6/login/pwicon.png) no-repeat;
+}
+
+.warpperSetupEye.Eyevisible{
+	background:url(http://0.js.al.okbuycdn.com/resources/images/v6/login/pwicon-2.png) no-repeat;
+}
+
+.warpperright .error{
+	color: #f00;
+	visibility: visible;
+}
+.warpperright .correct{
+	visibility: hidden;
 }
 .warpperVerification input{
 	height: 46px;
@@ -232,16 +262,22 @@ body{
     font-size: 14px;
     background: #fff;
     line-height: 46px;
-    margin-bottom: 13px;
     padding-left: 10px;
 }
-.Verification-p{
+.verification_p{
+	display: block;
 	text-align: center;
+	line-height: 46px;
 	width: 100px;
+	height: 46px;
 	float: right;
-    margin: 7px 1px 0 39px;
+    margin: 2px 20px;
+    color: #fff;
+    font-size: 40px;
     display: inline;
     cursor: pointer;
+    background: #ccc;
+    text-decoration: none;
 }
 .warpper-fastener input{
 	width: 338px;

@@ -8,8 +8,10 @@
 	<link rel="stylesheet" href="css/landing.css" />
 
 	<body>
+		<script src="http://libs.baidu.com/jquery/1.11.3/jquery.js"></script>
+		<script type="text/javascript" src="js/common(4).js" ></script>
 		<div class="landTop">
-			<img src="http://0.js.al.okbuycdn.com/resources/images/v6/login/login_new_logo.png">
+			<a href="index.html"><img src="http://0.js.al.okbuycdn.com/resources/images/v6/login/login_new_logo.png"></a>
 			<div class="landTopRight">
 				<span class="landTopSpan">
 		            <i></i>天天低价
@@ -27,25 +29,33 @@
 		</div>
 
 		<div class="warpper">
-			<img class="warpbanner" src="http://i.okaybuy.cn/static/c302701c79fbd2e6a84be4143a316922.jpg">
+			<img class="warpbanner" src="http://i.okaybuy.cn/static/f750ff7c1390e676ca0e0d111eb1b875.jpg">
 			<div class="warp">
 				<div class="warpperright">
+					<form action="landing.html">
 					<div class="warpperregister">
 		                <span class="warpper-reg">欢迎注册</span>
-		                <a class="warpper-reglogin" href="#">登录</a>
+		                <a class="warpper-reglogin" href="landing.html">登录</a>
 		            </div>
 		            <div class="warpperipone">
                         <input type="text" placeholder="请输入手机号">
-                        <span class="warpperipone-show"></span>
+                        <span class="warpperipone-show">
+                        	*手机号不符合规则     (请输入11位有效数字)
+                        </span>
                     </div>
                     <div class="warpperSetup">
-                        <input type="text" placeholder="请设置密码">
-                        <span class="warpperSetup-show"></span>
+                        <input type="password" placeholder="请设置密码">
+                        <i class="warpperSetupEye Eyeinvisible"></i>
+                        <span class="warpperSetup-show">
+                        	*密码不符合规则     (请输入6~16位有效 字母 数字 符号)
+                        </span>
                     </div>
                     <div class="warpperVerification">
                         <input type="text" placeholder="请输入验证码">
-                        <p class="Verification-p">1234</p>
-                        <span class="warpperSetup-show"></span>
+                        <a href="javascript:;" class="verification_p">1234</a>
+                        <span class="warpperVerification-show"> 
+                            *验证码错误
+                        </span>
                     </div>
 					<div class="warpper-fastener">
                         <input type="submit" value="注册">
@@ -53,11 +63,15 @@
                     <div class="warpperprotocol">
 					                注册即视为同意<a href="#"> 好乐买隐私协议</a>
 					</div>
+					</form>
 				</div>
 			</div>
 		</div>
 		<div class="landBottom">
 			Copyright © 2007-2019 OkBuy.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天津好乐买信息技术有限公司&nbsp;&nbsp;津B2-20140020&nbsp;&nbsp;京公网安备&nbsp;110105006859
 		</div>111
-
+        
+        
+        <script type="text/javascript" src="js/register.js" ></script>
+        
 	</body>
