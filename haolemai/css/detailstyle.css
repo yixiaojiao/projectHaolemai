@@ -195,9 +195,6 @@ body a{
 .detailsmain-prodoutlets a{
 	color: #535353;
 }
-.detailsmain-prodoutlets a:hover{
-	color: #535353;
-}
 .detailsmain-activitywrap2{
 	padding:5px 0 16px 74px;
 }
@@ -249,6 +246,12 @@ body a{
 .detailsmain-size .detailsmain-prodoutlets a:hover{
 	border: 1px solid #d70057;
 }
+
+.detailsmain-size .detailsmain-prodoutlets .imjos{
+	border: 1px solid #d70057;
+}
+
+
 .detailsmain-selectCount li{
 	float: left;
 }
@@ -258,7 +261,7 @@ body a{
 	height: 30px;
 	border:1px solid #ccc;
 }
-.detailsmain-selectCount .reduce,.detailsmain-selectCount .add{
+.detailsmain-selectCount .n_cartreduce,.detailsmain-selectCount .n_cartadd{
 	display: block;
 	width: 28px;
     height: 28px;
@@ -336,6 +339,42 @@ body a{
 	color:#d70057;
 	border-bottom:2px solid #d70057;
 }
+.detailsmainlist .detailsmain-procart{
+	display: none;
+	float: right;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    top: -2px;
+}
+.detailsmainlist .detailsmain-cartdprice{
+	display: inline-block;
+    padding-right: 10px;
+    color: #d70057;
+    font-size: 30px;
+}
+.detailsmainlist .detailsmain-cartBtn i{
+	color: #ccc;
+	padding: 0 5px;
+}
+.detailsmainlist .detailsmain-cartBtn{
+	display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    height: 46px;
+    border: 2px solid #fff;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    background-color: #d70057;
+    font-size: 18px;
+    cursor: pointer;
+    background: #d70057 url(http://0.js.al.okbuycdn.com/resources/images/v6/product/detail/cartbtnbg.png) 48px 13px no-repeat;
+}
+.detailsmainlist .detailsmain-cartBtn:hover{
+	border: 2px solid #999;
+}
+
 /*楼梯*/
 .StairsAllbackground{
 	margin:0 auto;

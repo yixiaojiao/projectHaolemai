@@ -11,11 +11,11 @@ function commodityTwo(){
 										<img src="${obj[goods].img}">
 										<p class="merchandiseTitle">${obj[goods].tit1}<span>${obj[goods].tit2}</span></p>
 										<span class="time2">
-											<span class="day"><b>0</b>天</span>
-											<span class="hour"><b>0</b>时</span>
-											<span class="minute"><b>0</b>分</span>
-											<span class="second"><b>0</b>秒</span>
-											<span class="fsecond"><b>0</b></span>
+											<span class="day"><i>0</i>天</span>
+											<span class="hour"><i>0</i>时</span>
+											<span class="minute"><i>0</i>分</span>
+											<span class="second"><i>0</i>秒</span>
+											<span class="fsecond"><i>0</i></span>
 										</span>
 									</a>
 								</div>`;

@@ -12,12 +12,16 @@ var detaimg = '<img src="'+Alldata[indexValue].img+'"/>'
 
 $(".sddalok2,.detailsmain-img-small a,.detailsmain-img-big").html(detaimg)
 //$(".d.detailsmain-img-small a,.detailsmain-img-bigetailsmain-img-small a,.detailsmain-img-big").html(detaimg2)
-$(".detailsmain-Tit1Name").text(Alldata[indexValue].tit1)
+$("#detailsmain-Tit1Name").text(Alldata[indexValue].tit1)
 $(".prodPrice-num").text(Alldata[indexValue].price)
 $(".pceoldnum").text(Alldata[indexValue].oldprice)
 $(".pcuntdnum").text(Alldata[indexValue].rebate)
 $(".ain-prodtit2").text(Alldata[indexValue].tit2)
 
+$(".detailsmain-size .detailsmain-activitywrap2 a").click(function(){
+	$(this).addClass("imjos");
+	$(this).siblings().removeClass("imjos");
+})
 
 $(".detailsmain-img-small").on({
 			            "mouseenter":details_mouseenter,
@@ -42,8 +46,6 @@ function details_mousemove(evt){
 	var ratio = parseFloat($(".detailsmain-img-big").width() / $(".detailsmain-selectBox").width());
 	var _number = $(".detailsmain-img-small").width() * ratio;
 			
-			
-	console.log(_number)
 	$(".detailsmain-img-big img").height(_number);
 	
 	_left = _left <= 0 ? 0 : _left;
@@ -75,8 +77,7 @@ function details_mousemove(evt){
                 stairsArray.push({
                     asdp : Math.round(ele.offset().top),
                 })
-            }
-    console.log(stairsArray);
+           }
     for(let i = 0 ; i < sdsae.length ; i ++){
             sdsae.eq(i).bind("click",i,function(){
               	$(window).scrollTop(stairsArray[i].asdp-$(".detailsmainlist").height());
@@ -84,30 +85,15 @@ function details_mousemove(evt){
               	sdsae.eq(i).siblings().removeClass("nav-Incommon-a")
              })
             }
-
-
-//  $(window).on("scroll",StairsScroll)
-//  
-//  function StairsScroll(){
-//  	console.log($(window).scrollTop());
-//  	console.log($(".StairsOne").offset().top+$(".detailsmainlist").height());
-//	
-//  }
     
     
-//  $(".airsOne").on("click",function(){
-//  	$(window).scrollTop($(".StairsOne").offset()
-//  	         .top-$(".detailsmainlist").height())
-//  })
-//  $(".airsTwo").on("click",function(){
-//  	$(window).scrollTop($(".StairsTwo").offset()
-//  	.top-$(".detailsmainlist").height())
-//  })
-//  $(".airsThr").on("click",function(){
-//  	$(window).scrollTop($(".StairsThr").offset()
-//  	.top-$(".detailsmainlist").height())
-//  })
-//  $(".airsFou").on("click",function(){
-//  	$(window).scrollTop($(".StairsFou").offset()
-//  	.top-$(".detailsmainlist").height())
-//  })
+    $(window).on("scroll",function(){
+    	if($(window).scrollTop()>966){
+            $(".detailsmainlist .detailsmain-procart").css({"display":"block"})
+    		}
+		else{
+			$(".detailsmainlist .detailsmain-procart").css({"display":"none"})
+		}
+    })
+    
+   

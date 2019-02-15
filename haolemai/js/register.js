@@ -21,6 +21,11 @@ $fastenerbtn.on("click",fastenerbtnClick)
 $(".warpperSetupEye").on("click",warpperSetupEyeClick)
 
 
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+
+
 function iponIptBlur(){
 	
 	var iponIptval = $iponIpt.val();
@@ -91,6 +96,25 @@ function fastenerbtnClick(evt){
 		}
 	}else{
 		alert("注册成功，点击确定跳转到登陆页面")
+		var usr_value = $iponIpt.val();
+	    var pwd_value = $setupIpt.val();
+	    var data = {
+                username : usr_value,
+                password : pwd_value
+            }
+	
+	
+		$.get("http://127.0.0.1/project/projectOne/haolemai/php/establist.php",
+		        data, function(res){
+		                 console.log(res);
+		            });
 	}
 	
 }
+
+
+
+/*--------------------------------表单提交----------------*/
+
+
+

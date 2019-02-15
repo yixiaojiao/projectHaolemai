@@ -198,7 +198,10 @@ body a{
 	background: #fff;
 	line-height: 28px;
 }
-
+.shopcar span:nth-child(2) i{
+	color: red;
+	padding: 0 5px;
+}
 
 
 .containNavBackground{
@@ -440,7 +443,7 @@ body a{
 .commodityBox .time{
 	position: absolute;
     z-index: 2;
-    left: 48px;
+    left: 34px;
     bottom: 10px;
     color: #666;
     font-size: 12px;
@@ -448,8 +451,7 @@ body a{
 .commodityBox .time span{
 	text-align: left;
 }
-.commodityBox .time b{
-	font-weight:normal ;
+.commodityBox .time i{
 	color: #d70057;
 }
 
@@ -522,8 +524,7 @@ body a{
 .merchandise .time2 span{
 	text-align: left;
 }
-.merchandise .time2 b{
-	font-weight:normal ;
+.merchandise .time2 i{
 	color: #d70057;
 }
 /*-----------------------bottom----------------------------*/

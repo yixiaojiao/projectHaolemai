@@ -85,7 +85,7 @@
 			</div>
 			<div class="shopcar">
 				<span>购物车</span>
-				<span>去购物车结算（0）</span>
+				<span>去购物车结算（<i>0</i>）</span>
 			</div>
 		</div>
 
@@ -437,13 +437,13 @@
 					    <div class="detailsmain-number">
 					    	<div class="detailsmain-timetxt">数量</div>
 					    	<ul class="detailsmain-selectCount">
-				                <li><a href="javascript:;" class="reduce">-</a></li>
+				                <li><a href="javascript:;" class="n_cartreduce">-</a></li>
 				                <li>
 				                	<span class="detailsmain-number-input">
-				                		<input type="text"/>
+				                		<input type="text" value="0" oninput="value=value.replace(/[^\d]/g,'')"/>
 				                	</span>
 				                </li>
-				                <li><a href="javascript:;" class="add">+</a></li>
+				                <li><a href="javascript:;" class="n_cartadd">+</a></li>
 				            </ul>
 					    </div>
 					    <div class="detailsmain-cart">
@@ -469,23 +469,27 @@
 					<a class="airsThr" href="javascript:;">楼梯三</a>
 					<a class="airsFou" href="javascript:;">楼梯四</a>
 				</div>
+				<div class="detailsmain-procart right">
+					<span class="detailsmain-cartdprice">￥<em class="prodPrice-num">109</em></span>
+					<a href="javascript:;" class="detailsmain-cartBtn">加入购物车(<i>0</i>)</a>
+				</div>
 			</div>
 			
 			<div class="StairsAll">
 				<div class="StairsOne">
-					<h3>楼梯一(以下皆为图片)</h3>
+					<h3>楼梯一(内容区皆为图片)</h3>
 					<img src="img/louti1.jpg"/>
 				</div>
 				<div class="StairsTwo">
-					<h3>楼梯二(以下皆为图片)</h3>
+					<h3>楼梯二(内容区皆为图片)</h3>
 					<img src="img/louti2.jpg"/>
 				</div>
 				<div class="StairsThr">
-					<h3>楼梯三(以下皆为图片)</h3>
+					<h3>楼梯三(内容区皆为图片)</h3>
 					<img src="img/louti3.jpg"/>
 				</div>
 				<div class="StairsFou">
-					<h3>楼梯四(以下皆为图片)</h3>
+					<h3>楼梯四(内容区皆为图片)</h3>
 					<img src="img/louti4.jpg"/>
 				</div>
 			</div>
@@ -564,4 +568,6 @@
     <script type="text/javascript" src="js/nav.js"></script>
 	<script type="text/javascript" src="js/search .js"></script>
     <script type="text/javascript" src="js/detail.js" ></script>
+    <script type="text/javascript" src="js/timer.js" ></script>
+    <script type="text/javascript" src="js/shopcar.js" ></script>
 </html>

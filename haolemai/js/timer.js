@@ -1,16 +1,7 @@
-	
-	
-	       var _data = document.getElementById("#_date");
-	       var _hours = document.getElementById("#_hours");
-	       var _minute = document.getElementById("#_minute");
-	       var _second = document.getElementById("#_second");
-//	       var _data = document.getElementById("#_date");
-	
-	
-	
+
 	
 			var date = new Date("2019/2/24");
-			setInterval(yuandan_timer,1000);
+			setInterval(yuandan_timer,10);
 			function yuandan_timer(){
                   var yuandan = date.getTime() - Date.now();
                   
@@ -20,12 +11,14 @@
                   var hour = parseInt(yuandan / 1000 / 3600) ;
                   var minute = parseInt((yuandan - hour * 1000 * 3600) / 1000 / 60);
                   var second = parseInt((yuandan - hour * 1000 * 3600 - minute * 1000 * 60) / 1000);
+                  var ms = yuandan % 1000;
                   
-                  _date.innerHTML = addZero(one_date);
-                  _hours.innerHTML = addZero(hours);
-                  _minute.innerHTML =  addZero(minute);
-                  _second.innerHTML =  addZero(second);
-
+                  $(".day i").text(addZero(one_date));
+                  $(".hour i").text(addZero(hours));
+                  $(".minute i").text(addZero(minute));
+                  $(".second i").text(addZero(second));
+                  $(".fsecond i").text(parseInt(ms/100));
+                  $(".commodityBox .fsecond i,.merchandise .fsecond i").text(parseInt(ms/10));
                   return yuandan_timer;
             }
 

@@ -35,7 +35,7 @@
 						<span class="scan">扫码登录</span>
 					</div>
 					<div class="accountTab">
-						<form>
+						<form class="form_btn">
 							<input class="accountuse" type="text" placeholder="已验证手机/邮箱/用户名">
 							<span class="warpperSetup-show"></span>
 							<input class="scanuse" type="password" placeholder="密码">
@@ -74,30 +74,5 @@
 
 	</body>
 	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-    <script>
-    	
-    	$(".account").click(function(){
-    		$(".accountTab").css({
-    			"z-index":999,
-    		});
-    		$(".scanTab").css({
-    			"z-index":2,
-    		});
-    		$(".account").addClass("active");
-    		$(".scan").removeClass("active");
-    	})
-    	
-    	$(".scan").click(function(){
-    		$(".scanTab").css({
-    			"z-index":999,
-    		});
-    		$(".accountTab").css({
-    			"z-index":2,
-    		});
-    		$(".scan").addClass("active");
-    		$(".account").removeClass("active");
-    	})
-    	
-    	
-    </script>
+	<script type="text/javascript" src="js/landing.js"></script>
 </html>
