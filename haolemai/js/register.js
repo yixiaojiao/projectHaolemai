@@ -67,9 +67,7 @@ $(".verification_p").click(function(){
 	$(".verification_p").text(yanzhengma12).css("background",randomColor(randomInt(0,255)))
 })
 
-
 function verificationIptBlur(){
-
 	var val32 = $verificationIpt.val() 
 	if(val32 == yanzhengma12 ){
 		$verificationspan.addClass("correct");
@@ -82,7 +80,6 @@ function verificationIptBlur(){
 
 function fastenerbtnClick(evt){
 	var e = evt || window.event;
-	
 	if(!$iponspan.hasClass("correct")||!$setupspan.hasClass("correct")||!$verificationspan.hasClass("correct")){
 		e.preventDefault ? e.preventDefault() : e.returnValue = false;
 		if(!$iponspan.hasClass("correct")){
@@ -93,7 +90,7 @@ function fastenerbtnClick(evt){
 		}
 		if(!$verificationspan != yanzhengma12){
 			$verificationspan.addClass("error");
-		}
+		}	
 	}else{
 		alert("注册成功，点击确定跳转到登陆页面")
 		var usr_value = $iponIpt.val();

@@ -13,29 +13,16 @@
     $password = @$_POST["password"];
 	
 	
+	
 	$select_query = "SELECT * FROM list1";
 
     $select_res = mysql_query($select_query);
-	
-	
-	
-	$json_array = array();
 
-        while($row = mysql_fetch_array($select_res)){
-             array_push($json_array,$row);
-        }
-
-    $json_array = json_encode($json_array);
-
-      echo "{
-            \"list\":$json_array
-      }";
-	
-//	$flag = false;
-//	
-//  while($row = mysql_fetch_array($select_res)){
-//      if(md5($password) === $row["password"]){
-//      	die('{"state":"error","errorType":"账号密码错误","stateCode":"5"}');
-//      }
-//  }
+    while($row = mysql_fetch_array($select_res)){
+            if($row["account"] === $username){
+                  if($row["password"] === md5($password)){
+                   die('{"state":"succound"}');
+                  }
+            }
+      }
 ?>

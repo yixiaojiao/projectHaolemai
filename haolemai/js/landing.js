@@ -23,6 +23,11 @@
 
 
 /*--------------------------------------*/
+$(".form_btn").submit(function(evt){
+	var e = evt || window.event;
+				e.preventDefault ? e.preventDefault() : e.returnValue = false;
+})
+
 /*--------------------------------------*/
 
 $(".accountTab .btn").on("click",function( ){
@@ -39,23 +44,13 @@ $(".accountTab .btn").on("click",function( ){
 	        data, render,"json")
 	
 	
-		function render(res){ console.log(res) }
-//			sdasd = res.list;
-//			
-//	    var panduansw = sdasd.every(function(item,index){
-//				return usr_value === item.account
-//			})
-//	    
-//	    var panduansw = sdasd.every(function(item,index){
-//				return usr_value === item.account
-//			})
-//	    
-//		if(panduansw){
-//			账号错误
-//		}
-//		
-//			
-//		}
+		function render(res){ 
+			console.log(res)
+			 if(res.state === "succound" ){
+			 	alert("登陆成功（点击确定进入主页）");
+			 	location.href = "index.html";
+			 }
+		}
 	           
 })
 
