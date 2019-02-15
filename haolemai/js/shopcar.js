@@ -15,6 +15,11 @@ $(".n_cartreduce").click(function(){
 	}
 })
 
+$(".detailsmain-number-input input").on("blur",function(){
+	nujd = $(".detailsmain-number-input input").val()
+	nujd = parseInt(nujd)
+	$(".detailsmain-number-input input").val(nujd)
+})
 
 $(".detailsmain-cartBtn").click(function(){
 	
